@@ -1,0 +1,30 @@
+name: Deploy Live
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build and Deploy
+
+    steps:
+      - uses: actions/checkout@master
+      - name: Setup Node JS
+        uses: actions/setup-node@v1
+        with:
+          node-version: 13.x
+      - run: npm install
+      - run: npm run production
+
+      - name: Publish
+        uses: nogsantos/scp-deploy@master
+        with:
+          src: ./dist/*
+          host: ${{ secrets.SSH_HOST }}
+          remote: ${{ secrets.SSH_DIR }}
+          port: ${{ secrets.SSH_PORT }}
+          user: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}

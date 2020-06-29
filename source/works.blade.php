@@ -1,6 +1,6 @@
 @extends('_layouts.master')
 @section('body')
-@extends('_layouts.navigation')
+
 <ul>
 @foreach ($works as $work)
     <a href="{{ $work->getUrl() }}">

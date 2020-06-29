@@ -1,6 +1,6 @@
 @extends('_layouts.master')
 @section('body')
-@extends('_layouts.navigation')
+
 <div class="slick-slider">
   <img data-lazy="/assets/images/works/image1.jpg"/>
   <img data-lazy="/assets/images/works/image2.jpg"/>

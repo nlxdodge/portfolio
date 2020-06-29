@@ -1,6 +1,6 @@
 @extends('_layouts.master')
 @section('body')
-@extends('_layouts.navigation')
+
 <ul>
 @foreach ($posts as $post)
     <a href="{{ $post->getUrl() }}">

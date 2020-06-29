@@ -26,6 +26,10 @@
         <script type="text/javascript" src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </head>
     <body>
-        @yield('body')
+        <div class="container">
+            @include('_partials.header')
+            @yield('body')
+            @include('_partials.footer')
+        </div>
     </body>
 </html>
