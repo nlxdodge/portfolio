@@ -10,11 +10,14 @@ return [
     'collections' => [
         'works' => [
             'path' => 'work/{filename}',
-            'sort' => 'last_name',
+            'header_image' => '',
+            'category' => 'minecraft',
+            'sort' => 'order',
         ],
         'posts' => [
             'path' => 'post/{filename}',
             'author' => 'Gerben Veenhof',
+            'sort' => '-date',
         ],
     ],
     'selected' => function ($page, $section) {

@@ -3,11 +3,9 @@
 
 <ul>
 @foreach ($posts as $post)
-    <a href="{{ $post->getUrl() }}">
-    <div class="post-block">
-        <div class="post-title">{{ $post->title }}</div>
-    </div>
-    </a>
+    <li class="post-block">
+        {{ date('j-F-Y', $post->date) }} - <a href="{{ $post->getUrl() }}">{{ $post->title }}</a>
+    </li>
 @endforeach
 </ul>
 @endsection

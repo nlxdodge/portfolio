@@ -26,10 +26,10 @@
         <script type="text/javascript" src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </head>
     <body>
+        @include('_partials.header')
         <div class="container">
-            @include('_partials.header')
             @yield('body')
-            @include('_partials.footer')
         </div>
+        @include('_partials.footer')
     </body>
 </html>

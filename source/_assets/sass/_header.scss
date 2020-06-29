@@ -6,22 +6,25 @@ header {
   }
 
   nav {
+    margin-bottom: 75px;
     display: flex;
-    background: #191919;
+    justify-content: center;
 
     a {
+      color: $template-color-opposing;
       padding: 12px 12px;
       font-size: 24px;
-      font-family: "Fredoka One", Arial, Helvetica, sans-serif;
-      color: #ffffff;
+      font-family: $template-header-font;
       text-decoration: none;
+      border-bottom: 5px solid $template-color;
+      transition: all 0.2s ease-in-out;
 
       &.selected {
-        border-bottom: 5px solid #ffbb00;
+        border-bottom: 5px solid $template-color-accent;
       }
 
-      &:hover:not(:first-child) {
-        background-color: lighten(#191919, 25%);
+      &:hover {
+        border-bottom: 5px solid $template-color-accent;
       }
     }
   }

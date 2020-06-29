@@ -339,27 +339,36 @@ template {
   display: none;
 }
 
-header .icon {
-  padding: 20px;
-  width: 36px;
-  vertical-align: sub;
+html {
+  position: relative;
+  min-height: 100%;
 }
-header nav {
-  display: flex;
-  background: #191919;
+
+body {
+  background-color: #ececec;
+  font: normal 16px "Open Sans", Verdana, Arial, sans-serif;
+  margin-bottom: 22px;
 }
-header nav a {
-  padding: 12px 12px;
-  font-size: 24px;
-  font-family: "Fredoka One", Arial, Helvetica, sans-serif;
-  color: #ffffff;
-  text-decoration: none;
+
+.container {
+  max-width: 1000px;
+  min-height: calc(100vh - 270px);
+  margin: 0 auto;
 }
-header nav a.selected {
-  border-bottom: 5px solid #ffbb00;
+
+.center-text {
+  text-align: center;
 }
-header nav a:hover:not(:first-child) {
-  background-color: #595959;
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.italic {
+  font-style: italic;
 }
 
 @font-face {
@@ -383,24 +392,89 @@ header nav a:hover:not(:first-child) {
   font-style: normal;
   font-display: swap;
 }
-body {
-  font: normal 16px "Open Sans", Verdana, Arial, sans-serif;
+header .icon {
+  padding: 20px;
+  width: 36px;
+  vertical-align: sub;
+}
+header nav {
+  margin-bottom: 75px;
+  display: flex;
+  justify-content: center;
+}
+header nav a {
+  color: #191919;
+  padding: 12px 12px;
+  font-size: 24px;
+  font-family: "Fredoka One", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  border-bottom: 5px solid #ececec;
+  transition: all 0.2s ease-in-out;
+}
+header nav a.selected {
+  border-bottom: 5px solid #ffbb00;
+}
+header nav a:hover {
+  border-bottom: 5px solid #ffbb00;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+.slick-slider {
+  position: relative;
+}
+.slick-slider .slick-slide img {
+  max-width: 100%;
+}
+.slick-slider .slick-dots li button {
+  width: 10px;
+}
+.slick-slider p {
+  position: absolute;
+  bottom: 0;
+  z-index: 1000;
+  color: #ececec;
+  font-size: 32px;
+  font-family: "Fredoka One", Arial, Helvetica, sans-serif;
 }
 
-.center-text {
-  text-align: center;
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+.social-media a img {
+  width: 50px;
+  padding: 20px;
+  margin: 0 20px;
+  transition: all 0.2s ease-in-out;
+}
+.social-media a img:hover {
+  transform: scale(1.15, 1.15);
 }
 
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.works-container {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.works-container .work-block {
+  text-decoration: none;
+  flex: 0 0 calc(50% - 60px);
+  margin: 30px;
+  transition: all 0.2s ease-in-out;
+}
+.works-container .work-block img {
+  max-width: 100%;
+}
+.works-container .work-block .work-title {
+  font-size: 24px;
+  font-family: "Fredoka One", Arial, Helvetica, sans-serif;
+  color: #191919;
+}
+.works-container .work-block .work-title .sub {
+  font-size: 12px;
+  font-family: "Open Sans", Verdana, Arial, sans-serif;
+}
+.works-container .work-block:hover {
+  transform: scale(1.05, 1.05);
 }
 
 /* Slider */

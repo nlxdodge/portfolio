@@ -1,13 +1,17 @@
 @extends('_layouts.master')
 @section('body')
 
-<ul>
+<div class="works-container">
 @foreach ($works as $work)
-    <a href="{{ $work->getUrl() }}">
-    <div class="work-block">
-        <div class="work-title">{{ $work->title }}</div>
-    </div>
+    <a class="work-block" href="{{ $work->getUrl() }}">
+        <img src="{{ $work->header_image }}" alt="{{ $work->title }}" />
+        <div class="work-title">
+            {{ $work->title }}
+            @if ($work->category)
+                <span class="sub">({{ $work->category }})</span>
+            @endif
+        </div>
     </a>
 @endforeach
-</ul>
+</div>
 @endsection

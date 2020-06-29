@@ -1,0 +1,31 @@
+.works-container {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+
+  .work-block {
+    text-decoration: none;
+    flex: 0 0 calc(50% - 60px);
+    margin: 30px;
+    transition: all 0.2s ease-in-out;
+
+    img {
+      max-width: 100%;
+    }
+
+    .work-title {
+      font-size: 24px;
+      font-family: $template-header-font;
+      color: $template-color-opposing;
+
+      .sub {
+        font-size: 12px;
+        font-family: $template-default-font;
+      }
+    }
+
+    &:hover {
+      transform: scale(1.05, 1.05);
+    }
+  }
+}
