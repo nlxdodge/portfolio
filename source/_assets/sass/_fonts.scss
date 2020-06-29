@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Fredoka One";
+  src: local("Fredoka One"), local("FredokaOne-Regular"),
+    url("/assets/fonts/FredokaOne-Regular.woff2") format("woff2"),
+    url("/assets/fonts/FredokaOne-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Light Italic"), local("OpenSans-LightItalic"),
+    url("/assets/fonts/OpenSans-LightItalic.woff2") format("woff2"),
+    url("/assets/fonts/OpenSans-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Light"), local("OpenSans-Light"),
+    url("/assets/fonts/OpenSans-Light.woff2") format("woff2"),
+    url("/assets/fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
