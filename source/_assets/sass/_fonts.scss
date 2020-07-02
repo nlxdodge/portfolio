@@ -1,9 +1,10 @@
 @font-face {
-  font-family: "Fredoka One";
-  src: local("Fredoka One"), local("FredokaOne-Regular"),
-    url("/assets/fonts/FredokaOne-Regular.woff2") format("woff2"),
-    url("/assets/fonts/FredokaOne-Regular.woff") format("woff");
-  font-weight: normal;
+  font-family: 'Montserrat';
+  src: local('Montserrat Black'), local('Montserrat-Black'),
+      url('/assets/fonts/Montserrat-Black.woff2') format('woff2'),
+      url('/assets/fonts/Montserrat-Black.woff') format('woff'),
+      url('/assets/fonts/Montserrat-Black.ttf') format('truetype');
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }

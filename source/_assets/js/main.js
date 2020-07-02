@@ -6,6 +6,7 @@ $(document).ready(function() {
     lazyLoad: "ondemand",
     arrows: false,
     autoplay: true,
+    fade: true,
     autoplaySpeed: 3500,
     infinite: true,
   });

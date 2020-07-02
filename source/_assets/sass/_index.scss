@@ -2,6 +2,8 @@
   position: relative;
 
   .slick-slide {
+    background-color: rgba(0, 0, 0, 0.5);
+
     img {
       max-width: 100%;
     }
@@ -13,12 +15,19 @@
     }
   }
 
+  a {
+    text-decoration: none;
+  }
+
   p {
     position: absolute;
     bottom: 0;
-    z-index: 1000;
+    left: 50%;
+    transform: translate(-50%, -60%);
     color: $template-color;
-    font-size: 32px;
+    font-size: 2rem;
+    margin: 10px;
+    text-align: center;
     font-family: $template-header-font;
   }
 }

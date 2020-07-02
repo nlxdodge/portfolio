@@ -350,6 +350,10 @@ body {
   margin-bottom: 22px;
 }
 
+h1, h2, h3, h4, h5, h6, .h {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
 .container {
   max-width: 1000px;
   min-height: calc(100vh - 270px);
@@ -372,9 +376,9 @@ body {
 }
 
 @font-face {
-  font-family: "Fredoka One";
-  src: local("Fredoka One"), local("FredokaOne-Regular"), url("/assets/fonts/FredokaOne-Regular.woff2") format("woff2"), url("/assets/fonts/FredokaOne-Regular.woff") format("woff");
-  font-weight: normal;
+  font-family: "Montserrat";
+  src: local("Montserrat Black"), local("Montserrat-Black"), url("/assets/fonts/Montserrat-Black.woff2") format("woff2"), url("/assets/fonts/Montserrat-Black.woff") format("woff"), url("/assets/fonts/Montserrat-Black.ttf") format("truetype");
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
@@ -404,22 +408,25 @@ header nav {
 }
 header nav a {
   color: #191919;
-  padding: 12px 12px;
+  padding: 6px 12px;
   font-size: 24px;
-  font-family: "Fredoka One", Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   text-decoration: none;
   border-bottom: 5px solid #ececec;
   transition: all 0.2s ease-in-out;
 }
 header nav a.selected {
-  border-bottom: 5px solid #ffbb00;
+  border-bottom: 5px solid #1DE9B6;
 }
 header nav a:hover {
-  border-bottom: 5px solid #ffbb00;
+  border-bottom: 5px solid #1DE9B6;
 }
 
 .slick-slider {
   position: relative;
+}
+.slick-slider .slick-slide {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .slick-slider .slick-slide img {
   max-width: 100%;
@@ -427,13 +434,19 @@ header nav a:hover {
 .slick-slider .slick-dots li button {
   width: 10px;
 }
+.slick-slider a {
+  text-decoration: none;
+}
 .slick-slider p {
   position: absolute;
   bottom: 0;
-  z-index: 1000;
+  left: 50%;
+  transform: translate(-50%, -60%);
   color: #ececec;
-  font-size: 32px;
-  font-family: "Fredoka One", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  margin: 10px;
+  text-align: center;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 .social-media {
@@ -465,8 +478,9 @@ header nav a:hover {
   max-width: 100%;
 }
 .works-container .work-block .work-title {
+  text-align: center;
   font-size: 24px;
-  font-family: "Fredoka One", Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   color: #191919;
 }
 .works-container .work-block .work-title .sub {
