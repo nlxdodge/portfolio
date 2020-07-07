@@ -15,7 +15,10 @@ jobs:
         uses: docker://composer:1.10.8
         with:
           args: install
-      - run: composer require tightenco/jigsaw
+      - name: Composer require Jigsaw
+        uses: docker://php:7.4
+        with:
+          args: composer require tightenco/jigsaw
       - name: Setup Node version 13
         uses: actions/setup-node@v1
         with:
