@@ -20,32 +20,15 @@
   }
 
   p {
+    z-index: 2;
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, -60%);
-    color: $template-color;
-    font-size: 2rem;
+    color: #fff;
+    font-size: 2em;
     margin: 10px;
     text-align: center;
     font-family: $template-header-font;
-  }
-}
-
-.social-media {
-  display: flex;
-  justify-content: center;
-
-  a {
-    img {
-      width: 50px;
-      padding: 20px;
-      margin: 0 20px;
-      transition: all 0.2s ease-in-out;
-
-      &:hover {
-        transform: scale(1.15, 1.15);
-      }
-    }
   }
 }

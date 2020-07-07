@@ -1,6 +1,14 @@
-$template-color: #ececec;
-$template-color-opposing: #191919;
-$template-color-accent: #1DE9B6;
+html {
+  --template-color: #ececec;
+  --template-color-opposing: #202020;
+  --template-color-accent: #00d49f;
+  --template-color-accent-dark: #11b38a;
+}
+
+$template-color: var(--template-color);
+$template-color-opposing: var(--template-color-opposing);
+$template-color-accent: var(--template-color-accent);
+$template-color-accent-dark: var(--template-color-accent-dark);
 
 $template-default-font: "Open Sans", Verdana, Arial, sans-serif;
 $template-header-font: "Montserrat", Arial, Helvetica, sans-serif;

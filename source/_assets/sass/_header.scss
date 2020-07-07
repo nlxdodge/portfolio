@@ -1,9 +1,6 @@
 header {
-  .icon {
-    padding: 20px;
-    width: 36px;
-    vertical-align: sub;
-  }
+  color: $template-color-opposing;
+  background-color: $template-color;
 
   nav {
     margin-bottom: 75px;
@@ -12,12 +9,16 @@ header {
 
     a {
       color: $template-color-opposing;
-      padding: 6px 12px;
-      font-size: 24px;
+      padding: 6px 9px;
+      font-size: 1.75em;
       font-family: $template-header-font;
       text-decoration: none;
-      border-bottom: 5px solid $template-color;
+      border-bottom: 5px solid transparent;
       transition: all 0.2s ease-in-out;
+
+      @include media(">mobile") {
+        padding: 6px 12px;
+      }
 
       &.selected {
         border-bottom: 5px solid $template-color-accent;

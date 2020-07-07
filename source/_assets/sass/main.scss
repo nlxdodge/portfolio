@@ -1,10 +1,15 @@
-@import "_normalize";
+/* plugins */
+@import "plugins/normalize";
+@import "plugins/slick";
+@import "plugins/slick-theme";
+@import "plugins/include-media.scss";
+
+/* site styling */
 @import "_settings";
 @import "_defaults";
 @import "_fonts";
 @import "_header";
+@import "_footer";
 @import "_index";
 @import "_works";
 
-@import "plugins/slick";
-@import "plugins/slick-theme";

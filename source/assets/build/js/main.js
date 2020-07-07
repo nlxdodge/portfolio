@@ -14002,7 +14002,7 @@ window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jqu
 
 __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/slick.js");
 
-$(document).ready(function () {
+function slickSlider() {
   $(".slick-slider").slick({
     lazyLoad: "ondemand",
     arrows: false,
@@ -14010,6 +14010,39 @@ $(document).ready(function () {
     fade: true,
     autoplaySpeed: 3500,
     infinite: true
+  });
+}
+
+function setDarkTheme() {
+  localStorage.setItem("theme", "dark");
+  $('.toggle-colors i').addClass('fa-sun');
+  $('.toggle-colors i').removeClass('fa-moon');
+  document.documentElement.style.setProperty("--template-color", "#202020");
+  document.documentElement.style.setProperty("--template-color-opposing", "#ececec");
+}
+
+function setLightTheme() {
+  localStorage.setItem("theme", "light");
+  $('.toggle-colors i').removeClass('fa-sun');
+  $('.toggle-colors i').addClass('fa-moon');
+  document.documentElement.style.setProperty("--template-color", "#ececec");
+  document.documentElement.style.setProperty("--template-color-opposing", "#202020");
+}
+
+function applyTheme() {
+  if (localStorage.getItem("theme") == "dark") {
+    setDarkTheme();
+  } else {
+    setLightTheme();
+  }
+}
+
+$(document).ready(function () {
+  slickSlider();
+  applyTheme();
+  $(".toggle-colors").click(function () {
+    localStorage.setItem("theme", localStorage.getItem("theme") == "dark" ? "light" : "dark");
+    applyTheme();
   });
 });
 
@@ -14022,7 +14055,7 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\n\r\n    $_: im-log('Invalid unit `#{$unit}`.');\r\n       ^\r\n      \"Invalid unit `mobile`.\"\n    ╷\n463 │     $_: im-log('Invalid unit `#{$unit}`.');\r\n    │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ╵\n  source\\_assets\\sass\\plugins\\include-media.scss 463:9   to-length()\n  source\\_assets\\sass\\plugins\\include-media.scss 434:15  to-number()\n  source\\_assets\\sass\\plugins\\include-media.scss 327:13  get-expression-value()\n  source\\_assets\\sass\\plugins\\include-media.scss 368:11  parse-expression()\n  source\\_assets\\sass\\plugins\\include-media.scss 558:22  media()\n  source\\_assets\\sass\\_header.scss 19:7                  @import\n  stdin 11:9                                             root stylesheet\r\n      in D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\source\\_assets\\sass\\plugins\\include-media.scss (line 463, column 9)\n    at D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\loader-runner\\lib\\LoaderRunner.js:233:18\n    at context.callback (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass-loader\\dist\\index.js:89:7\n    at Function.call$2 (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:88152:16)\n    at _render_closure1.call$2 (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:77577:12)\n    at _RootZone.runBinary$3$3 (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:26142:18)\n    at _RootZone.runBinary$3 (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:26146:19)\n    at _FutureListener.handleError$1 (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:24590:19)\n    at _Future__propagateToListeners_handleError.call$0 (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:24887:40)\n    at Object._Future__propagateToListeners (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:4311:88)\n    at _Future._completeError$2 (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:24715:9)\n    at _AsyncAwaitCompleter.completeError$2 (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:24107:12)\n    at Object._asyncRethrow (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:4065:17)\n    at D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:14085:20\n    at _wrapJsFunctionForAsync_closure.$protected (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:4090:15)\n    at _wrapJsFunctionForAsync_closure.call$2 (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:24128:12)\n    at _awaitOnObject_closure0.call$2 (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:24120:25)\n    at _RootZone.runBinary$3$3 (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:26142:18)\n    at _RootZone.runBinary$3 (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:26146:19)\n    at _FutureListener.handleError$1 (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:24590:19)\n    at _Future__propagateToListeners_handleError.call$0 (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:24887:40)\n    at Object._Future__propagateToListeners (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:4311:88)\n    at _Future._completeError$2 (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:24715:9)\n    at _AsyncAwaitCompleter.completeError$2 (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:24107:12)\n    at Object._asyncRethrow (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:4065:17)\n    at D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:16668:20\n    at _wrapJsFunctionForAsync_closure.$protected (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:4090:15)\n    at _wrapJsFunctionForAsync_closure.call$2 (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:24128:12)\n    at _awaitOnObject_closure0.call$2 (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:24120:25)\n    at _RootZone.runBinary$3$3 (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:26142:18)\n    at _RootZone.runBinary$3 (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:26146:19)\n    at _FutureListener.handleError$1 (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:24590:19)\n    at _Future__propagateToListeners_handleError.call$0 (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:24887:40)\n    at Object._Future__propagateToListeners (D:\\Stack\\Eigenwerk\\Development\\Websites\\Portfolio small\\node_modules\\sass\\sass.dart.js:4311:88)");
 
 /***/ }),
 

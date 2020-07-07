@@ -1,0 +1,30 @@
+footer {
+  margin-top: 25px;
+  
+  p {
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+
+    a {
+      .fab {
+        font-size: 2em;
+        color: $template-color-accent;
+        margin: 0 20px;
+        transition: all 0.2s ease-in-out;
+
+        @include media(">tablet") {
+          padding: 20px;
+        }
+
+        &:hover {
+          transform: scale(1.15, 1.15);
+        }
+      }
+    }
+  }
+}

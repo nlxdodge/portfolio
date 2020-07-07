@@ -24,6 +24,7 @@
 
         <!-- custom plugins -->
         <script type="text/javascript" src="{{ mix('js/main.js', 'assets/build') }}"></script>
+        <script src="https://kit.fontawesome.com/7ab1523f09.js" crossorigin="anonymous"></script>
 
         @if ($page->production)
             <!-- Google Analytics (Yeah I know not realy privacy correct) -->

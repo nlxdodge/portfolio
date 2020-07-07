@@ -1,22 +1,43 @@
 html {
   position: relative;
   min-height: 100%;
+  transition: all 0.2s ease-in-out;
 }
 
 body {
+  transition: all 0.2s ease-in-out;
   background-color: $template-color;
+  color: $template-color-opposing;
   font: normal 16px $template-default-font;
-  margin-bottom: 22px;
 }
 
-h1, h2, h3, h4, h5, h6, .h {
+a {
+  color: $template-color-accent;
+
+  &:hover {
+    color: $template-color-accent-dark;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h {
   font-family: $template-header-font;
 }
 
 .container {
+  padding: 0 12px;
   max-width: 1000px;
   min-height: calc(100vh - 270px);
   margin: 0 auto;
+
+  @include media(">desktop") {
+    padding: 0;
+  }
 }
 
 .center-text {
@@ -32,4 +53,23 @@ h1, h2, h3, h4, h5, h6, .h {
 
 .italic {
   font-style: italic;
+}
+
+.margin-top-50 {
+  margin-top: 50px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: $template-color-accent;
+  font-family: $template-header-font;
+  color: $template-color;
+  text-decoration: none;
+  padding: 18px 25px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: $template-color;
+    background-color: $template-color-accent-dark;
+  }
 }
