@@ -11,7 +11,12 @@ jobs:
     name: Build and Deploy
     steps:
       - uses: actions/checkout@master
-      - name: Create Jigsaw Build
+      - name: Composer install
+        uses: docker://composer:1.10.8
+        with:
+          args: install
+      - run: composer require tightenco/jigsaw
+      - name: Setup Node version 13
         uses: actions/setup-node@v1
         with:
           node-version: 13.x
