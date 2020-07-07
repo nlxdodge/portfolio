@@ -699,6 +699,11 @@ header nav a {
   border-bottom: 5px solid transparent;
   transition: all 0.2s ease-in-out;
 }
+@media (min-width: 321px) {
+  header nav a {
+    padding: 6px 12px;
+  }
+}
 header nav a.selected {
   border-bottom: 5px solid var(--template-color-accent);
 }
