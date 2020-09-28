@@ -1,4 +1,4 @@
-name: Deployment
+name: Deploy to Web
 
 on:
   push:
@@ -22,9 +22,9 @@ jobs:
       - run: npm install
       - run: npm run production
       - name: FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        uses: sebastianpopp/ftp-action@releases/v2
         with:
-          ftp-server: ${{ secrets.FTP_DOMAIN }}
-          ftp-username: ${{ secrets.FTP_USERNAME }}
-          ftp-password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./build_production
+          host: ${{ secrets.FTP_DOMAIN }}
+          user: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          localDir: ./build_production
