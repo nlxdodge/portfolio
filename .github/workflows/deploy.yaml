@@ -14,7 +14,7 @@ jobs:
       - name: Install dependencies
         uses: php-actions/composer@v2
         with:
-          args: composer require tightenco/jigsaw
+          command: composer require tightenco/jigsaw
       - name: Setup Node version 13
         uses: actions/setup-node@v1
         with:
