@@ -42,7 +42,7 @@ function applyTheme() {
   }
 }
 
-$(document).ready(function() {
+jQuery(function() {
   slickSlider();
   applyTheme();
 

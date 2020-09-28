@@ -14037,7 +14037,7 @@ function applyTheme() {
   }
 }
 
-$(document).ready(function () {
+jQuery(function () {
   slickSlider();
   applyTheme();
   $(".error-gif").each(function () {

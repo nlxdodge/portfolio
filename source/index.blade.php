@@ -2,9 +2,9 @@
 @section('body')
 
 <div class="slick-slider">
-  <a href="/work/scrapyard/"><img data-lazy="/assets/images/works/scrapyard.png"/><p>Scrapyard</p></a>
-  <a href="/work/keydungeon/"><img data-lazy="/assets/images/works/keydungeon.png"/><p>keydungeon</p></a>
-  <a href="/post/26-06-2020_new_website/"><img data-lazy="/assets/images/works/keydungeon.png"/><p>New website</p></a>
+  <a href="/work/scrapyard/"><img data-lazy="/assets/images/works/scrapyard.png" alt="Scrapyard Minecraft mod"/><p>Scrapyard</p></a>
+  <a href="/work/keydungeon/"><img data-lazy="/assets/images/works/keydungeon.png" alt="Keydungeon password manager"/><p>keydungeon</p></a>
+  <a href="/post/26-06-2020_new_website/"><img data-lazy="/assets/images/works/keydungeon.png" alt="new Website"/><p>New website</p></a>
 </div>
 
 <div class="center-text">
