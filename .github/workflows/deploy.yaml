@@ -11,10 +11,10 @@ jobs:
     name: Build and Deploy
     steps:
       - uses: actions/checkout@master
-      - name: Composer install
-        uses: docker://composer:latest
+      - name: Install dependencies
+        uses: php-actions/composer@v2
         with:
-          args: install && composer global update && composer require tightenco/jigsaw
+          args: composer require tightenco/jigsaw
       - name: Setup Node version 13
         uses: actions/setup-node@v1
         with:
