@@ -27,14 +27,14 @@
         <script defer type="text/javascript" src="{{ mix('js/main.js', 'assets/build') }}"></script>
 
         @if ($page->production)
-            <!-- Google Analytics (Yeah I know not realy privacy correct) -->
+            <!-- Google Analytics (Yeah I know not really for your privacy) -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=UA-83869367-1"></script>
             <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
 
-            gtag('config', 'UA-83869367-1');
+                gtag('config', 'UA-83869367-1');
             </script>
         @endif
     </head>
