@@ -10,4 +10,3 @@ yarn-error.log
 # Optional ignores
 /build_staging/
 /build_production/
-# /source/assets/build/

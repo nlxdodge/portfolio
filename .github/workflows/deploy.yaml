@@ -12,11 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Composer install
-        uses: docker://composer:1.10.8
+        uses: docker://composer:latest
         with:
-          args: install
-      - run: composer global update
-      - run: composer require tightenco/jigsaw
+          args: install && composer global update && composer require tightenco/jigsaw
       - name: Setup Node version 13
         uses: actions/setup-node@v1
         with:
@@ -26,8 +24,7 @@ jobs:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@3.1.1
         with:
-          # Formatted as protocol://domain.com:port/full/destination/path/
-          ftp-server: ${{ secrets.FTP_DIR }}
+          ftp-server: ${{ secrets.FTP_DOMAIN }}
           ftp-username: ${{ secrets.FTP_USERNAME }}
           ftp-password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./build_production
