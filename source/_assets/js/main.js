@@ -1,17 +1,6 @@
 window.$ = window.jQuery = require("jquery");
 require("slick-carousel");
 
-function slickSlider() {
-  $(".slick-slider").slick({
-    lazyLoad: "ondemand",
-    arrows: false,
-    autoplay: true,
-    fade: true,
-    autoplaySpeed: 3500,
-    infinite: true,
-  });
-}
-
 function setDarkTheme() {
   localStorage.setItem("theme", "dark");
   $(".toggle-colors i").addClass("fa-sun");
@@ -43,13 +32,21 @@ function applyTheme() {
 }
 
 jQuery(function() {
-  slickSlider();
+  $(".slick-slider").slick({
+    lazyLoad: "ondemand",
+    arrows: false,
+    autoplay: true,
+    fade: true,
+    autoplaySpeed: 3500,
+    infinite: true,
+  });
+  
   applyTheme();
 
   $(".error-gif").each(function() {
     let gif = $(this);
     fetch(
-      "https://api.giphy.com/v1/gifs/random?api_key=LXYWwiKGkGMeBqKyOlb6tRBKfzIhmH91&tag=404%20error&rating=PG-13",
+      "https://api.giphy.com/v1/gifs/random?api_key=LXYWwiKGkGMeBqKyOlb6tRBKfzIhmH91&tag=technical%20difficulties&rating=PG-13",
       {
         method: "GET",
       }
@@ -62,7 +59,7 @@ jQuery(function() {
       });
   });
 
-  $(".toggle-colors").click(function() {
+  $(".toggle-colors").on('click', function() {
     localStorage.setItem(
       "theme",
       localStorage.getItem("theme") == "dark" ? "light" : "dark"

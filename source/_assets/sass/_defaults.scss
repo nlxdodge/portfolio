@@ -59,13 +59,14 @@ h6,
   margin-top: 50px;
 }
 
-.btn {
+.button {
   display: inline-block;
   background-color: $template-color-accent;
   font-family: $template-header-font;
+  font-size: 1.25em;
   color: $template-color;
   text-decoration: none;
-  padding: 18px 25px;
+  padding: 18px 30px;
   transition: all 0.2s ease-in-out;
 
   &:hover {

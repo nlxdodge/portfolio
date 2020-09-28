@@ -2,10 +2,10 @@
 @section('body')
 <div class="post">
   <h1>{{ $page->title }}</h1>
-  <p class="italic">Made by: {{ $page->author }} - last updated: {{ date('j-F-Y', $page->date) }}</p>
+  <p class="italic">Writen by: {{ $page->author }} - Last update: {{ date('j-F-Y', $page->date) }}</p>
   @yield('content')
   <div class="center-text margin-top-50">
-    <a class="btn" href="/posts">All posts</a>
+    <a class="button" href="/posts"><i class="fas fa-arrow-left"></i> All posts</a>
   </div>
 </div>
 @endsection

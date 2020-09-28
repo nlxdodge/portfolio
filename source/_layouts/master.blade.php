@@ -23,8 +23,8 @@
         <meta name="theme-color" content="#191919">
 
         <!-- custom plugins -->
-        <script type="text/javascript" src="{{ mix('js/main.js', 'assets/build') }}"></script>
-        <script src="https://kit.fontawesome.com/7ab1523f09.js" crossorigin="anonymous"></script>
+        <script async src="https://kit.fontawesome.com/7ab1523f09.js" crossorigin="anonymous"></script>
+        <script defer type="text/javascript" src="{{ mix('js/main.js', 'assets/build') }}"></script>
 
         @if ($page->production)
             <!-- Google Analytics (Yeah I know not realy privacy correct) -->

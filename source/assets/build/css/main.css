@@ -579,10 +579,10 @@ template {
 
 /* site styling */
 html {
-  --template-color: #ececec;
+  --template-color: #ffffff;
   --template-color-opposing: #202020;
-  --template-color-accent: #00d49f;
-  --template-color-accent-dark: #11b38a;
+  --template-color-accent: #F79F1F;
+  --template-color-accent-dark: #EE5A24;
 }
 
 html {
@@ -646,16 +646,17 @@ h6,
   margin-top: 50px;
 }
 
-.btn {
+.button {
   display: inline-block;
   background-color: var(--template-color-accent);
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 1.25em;
   color: var(--template-color);
   text-decoration: none;
-  padding: 18px 25px;
+  padding: 18px 30px;
   transition: all 0.2s ease-in-out;
 }
-.btn:hover {
+.button:hover {
   color: var(--template-color);
   background-color: var(--template-color-accent-dark);
 }

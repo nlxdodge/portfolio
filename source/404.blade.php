@@ -5,7 +5,7 @@
   <h1>404 Error</h1>
   <img class="error-gif" src="" alt="404 giphy image" />
   <div class="center-text margin-top-50">
-    <a class="btn" href="/"><i class="fas fa-arrow-left"></i> Home</a>
+    <a class="button" href="/"><i class="fas fa-arrow-left"></i> Home</a>
   </div>
 </div>
 @endsection

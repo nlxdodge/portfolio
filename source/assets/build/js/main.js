@@ -14002,17 +14002,6 @@ window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jqu
 
 __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/slick.js");
 
-function slickSlider() {
-  $(".slick-slider").slick({
-    lazyLoad: "ondemand",
-    arrows: false,
-    autoplay: true,
-    fade: true,
-    autoplaySpeed: 3500,
-    infinite: true
-  });
-}
-
 function setDarkTheme() {
   localStorage.setItem("theme", "dark");
   $(".toggle-colors i").addClass("fa-sun");
@@ -14038,11 +14027,18 @@ function applyTheme() {
 }
 
 jQuery(function () {
-  slickSlider();
+  $(".slick-slider").slick({
+    lazyLoad: "ondemand",
+    arrows: false,
+    autoplay: true,
+    fade: true,
+    autoplaySpeed: 3500,
+    infinite: true
+  });
   applyTheme();
   $(".error-gif").each(function () {
     var gif = $(this);
-    fetch("https://api.giphy.com/v1/gifs/random?api_key=LXYWwiKGkGMeBqKyOlb6tRBKfzIhmH91&tag=404%20error&rating=PG-13", {
+    fetch("https://api.giphy.com/v1/gifs/random?api_key=LXYWwiKGkGMeBqKyOlb6tRBKfzIhmH91&tag=technical%20difficulties&rating=PG-13", {
       method: "GET"
     }).then(function (response) {
       return response.json();
@@ -14050,7 +14046,7 @@ jQuery(function () {
       gif.attr("src", json.data.image_url);
     });
   });
-  $(".toggle-colors").click(function () {
+  $(".toggle-colors").on('click', function () {
     localStorage.setItem("theme", localStorage.getItem("theme") == "dark" ? "light" : "dark");
     applyTheme();
   });

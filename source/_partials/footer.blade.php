@@ -7,6 +7,6 @@
             <a href="https://twitter.com/gerbenveenhof"><i class="fab fa-twitter"></i></a>
             <a href="https://www.reddit.com/user/nlxdodge"><i class="fab fa-reddit-alien"></i></a>
         </div>
-        <p>&copy; Gerben Veenhof | {{ date("Y") }} | Made with <a href="https://jigsaw.tighten.co/">Jigsaw</p>
+        <p><i class="fas fa-registered"></i> Gerben Veenhof | {{ date("Y") }} | Made with <a href="https://jigsaw.tighten.co/">Jigsaw</p>
     </div>
 </footer>
