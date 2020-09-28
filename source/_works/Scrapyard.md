@@ -5,7 +5,7 @@ author: Gerben Veenhof
 date: 2020-06-26
 section: content
 header_image: /assets/images/works/scrapyard.png
-category: Minecraft
+category: Java
 link: https://github.com/nlxdodge/scrapyard
 order: 1
 ---

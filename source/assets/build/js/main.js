@@ -14004,18 +14004,14 @@ __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/s
 
 function setDarkTheme() {
   localStorage.setItem("theme", "dark");
-  $(".toggle-colors i").addClass("fa-sun");
-  $(".toggle-colors i").removeClass("fa-moon");
-  document.documentElement.style.setProperty("--template-color", "#202020");
-  document.documentElement.style.setProperty("--template-color-opposing", "#ececec");
+  document.documentElement.style.setProperty("--template-color", "#ffffff");
+  document.documentElement.style.setProperty("--template-color-opposing", "#202020");
 }
 
 function setLightTheme() {
   localStorage.setItem("theme", "light");
-  $(".toggle-colors i").removeClass("fa-sun");
-  $(".toggle-colors i").addClass("fa-moon");
-  document.documentElement.style.setProperty("--template-color", "#ececec");
-  document.documentElement.style.setProperty("--template-color-opposing", "#202020");
+  document.documentElement.style.setProperty("--template-color", "#202020");
+  document.documentElement.style.setProperty("--template-color-opposing", "#ffffff");
 }
 
 function applyTheme() {

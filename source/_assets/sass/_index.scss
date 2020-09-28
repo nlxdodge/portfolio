@@ -1,8 +1,17 @@
+.slick-track
+{
+    display: flex !important;
+}
+
+.slick-slide
+{
+    height: inherit !important;
+}
+
 .slick-slider {
   position: relative;
 
   .slick-slide {
-    background-color: rgba(0, 0, 0, 0.5);
 
     img {
       max-width: 100%;
@@ -30,5 +39,8 @@
     margin: 10px;
     text-align: center;
     font-family: $template-header-font;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 35px;
   }
 }

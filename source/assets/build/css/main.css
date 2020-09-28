@@ -579,10 +579,10 @@ template {
 
 /* site styling */
 html {
-  --template-color: #ffffff;
-  --template-color-opposing: #202020;
+  --template-color: #202020;
+  --template-color-opposing: #ffffff;
   --template-color-accent: #F79F1F;
-  --template-color-accent-dark: #EE5A24;
+  --template-color-accent-dark:#cc8720;
 }
 
 html {
@@ -595,7 +595,7 @@ body {
   transition: all 0.2s ease-in-out;
   background-color: var(--template-color);
   color: var(--template-color-opposing);
-  font: normal 16px "Open Sans", Verdana, Arial, sans-serif;
+  font: normal 18px "Open Sans", Verdana, Arial, sans-serif;
 }
 
 a {
@@ -611,7 +611,7 @@ h3,
 h4,
 h5,
 h6,
-.h {
+.header {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
@@ -625,6 +625,12 @@ h6,
   .container {
     padding: 0;
   }
+}
+
+article img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .center-text {
@@ -656,9 +662,22 @@ h6,
   padding: 18px 30px;
   transition: all 0.2s ease-in-out;
 }
+.button i {
+  font-size: 1.25em;
+  vertical-align: text-bottom;
+}
 .button:hover {
   color: var(--template-color);
   background-color: var(--template-color-accent-dark);
+}
+
+.pagination {
+  text-align: center;
+  font-size: 1.25em;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+.pagination a {
+  text-decoration: none;
 }
 
 @font-face {
@@ -724,7 +743,7 @@ footer .social-media {
   justify-content: center;
 }
 footer .social-media a .fab {
-  font-size: 2em;
+  font-size: 2.5em;
   color: var(--template-color-accent);
   margin: 0 20px;
   transition: all 0.2s ease-in-out;
@@ -738,11 +757,16 @@ footer .social-media a .fab:hover {
   transform: scale(1.15, 1.15);
 }
 
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: inherit !important;
+}
+
 .slick-slider {
   position: relative;
-}
-.slick-slider .slick-slide {
-  background-color: rgba(0, 0, 0, 0.5);
 }
 .slick-slider .slick-slide img {
   max-width: 100%;
@@ -764,6 +788,8 @@ footer .social-media a .fab:hover {
   margin: 10px;
   text-align: center;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 35px;
 }
 
 .works-container {
