@@ -5,6 +5,7 @@ use Illuminate\Support\Str;
 return [
     'production' => false,
     'title' => 'Gerben Veenhof',
+    'host' => 'https://gerbenveenhof.nl',
     'contact_email' => 'contact@gerbenveenhof.nl',
     'description' => 'This is my personal website, find software, mods or other programs that I wrote or contact me for more information.',
     'collections' => [
