@@ -17,8 +17,8 @@ pagination:
     </ul>
     <div class="pagination">
         @if ($previous = $pagination->previous)
-            <a href="{{ $page->baseUrl }}{{ $pagination->first }}"><i aria-hidden="true" class="fas fa-angle-double-left"></i></a>
-            <a href="{{ $page->baseUrl }}{{ $previous }}"><i aria-hidden="true" class="fas fa-angle-left"></i></a>
+            <a href="{{ $page->baseUrl }}{{ $pagination->first }}"><i aria-hidden="true" aria-label="First page" class="fas fa-angle-double-left"></i></a>
+            <a href="{{ $page->baseUrl }}{{ $previous }}"><i aria-hidden="true" aria-label="Page back" class="fas fa-angle-left"></i></a>
         @endif
 
         @foreach ($pagination->pages as $pageNumber => $path)
@@ -29,8 +29,8 @@ pagination:
         @endforeach
 
         @if ($next = $pagination->next)
-            <a href="{{ $page->baseUrl }}{{ $next }}"><i aria-hidden="true" class="fas fa-angle-right"></i></a>
-            <a href="{{ $page->baseUrl }}{{ $pagination->last }}"><i aria-hidden="true" class="fas fa-angle-double-right"></i></a>
+            <a href="{{ $page->baseUrl }}{{ $next }}"><i aria-hidden="true" aria-label="Page forward" class="fas fa-angle-right"></i></a>
+            <a href="{{ $page->baseUrl }}{{ $pagination->last }}"><i aria-hidden="true" aria-label="Last page" class="fas fa-angle-double-right"></i></a>
         @endif
     </div>
 </div>
