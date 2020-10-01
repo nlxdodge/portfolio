@@ -10,7 +10,7 @@
 <div class="center-text">
   <h1>A Back-end developer as intended.</h1>
   <p>Welcome to my website, you can find all sorts of informational posts and all my proud works. While also giving a download for you to try it out yourselves.</p>
-  <h3>Some info about myself</h3>
+  <h2>Some info about myself</h2>
   <p>I Started of my career with interests in computer science at a very young age. And took that to school where I choose to be an aspiring game developer. But soon
     found out that making games was almost the same as writing code for websites or other applications. Hence, I started to learn a new and higher degree for application
     development. At which I am running my last year of right now.</p>
