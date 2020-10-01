@@ -14,4 +14,4 @@ Scrapyard is my first ever minecraft mod that is basically a bunch of ideas gath
 
 Right now it's still in production as I am trying to learn the new Fabric API as that works SOO much better then Forge.
 
-Download now
+Check the link for my up to date repository.
