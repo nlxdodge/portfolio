@@ -1,6 +1,6 @@
 <footer>
     <div class="center-text">
-        <h4>You can find me on these platforms:</h4>
+        <p class="header">You can find me on these platforms:</p class="header">
         <div class="social-media">
             <a href="https://github.com/nlxdodge"><i aria-hidden="true" aria-label="Github link" class="fab fa-github-square"></i></i></a>
             <a href="https://www.linkedin.com/in/gerbenveenhof/"><i aria-hidden="true" aria-label="Linkedin link" class="fab fa-linkedin"></i></a>
