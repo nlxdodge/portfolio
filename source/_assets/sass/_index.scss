@@ -33,13 +33,18 @@
   }
 
   p {
+    @include media(">tablet") {
+      transform: translate(-50%, -60%);
+      font-size: 2em;
+    }
+
     z-index: 2;
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -20%);
     color: #fff;
-    font-size: 2em;
+    font-size: 1.2em;
     margin: 10px;
     text-align: center;
     font-family: $template-header-font;
