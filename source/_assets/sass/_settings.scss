@@ -1,8 +1,22 @@
 html {
   --template-color: #202020;
   --template-color-opposing: #ffffff;
-  --template-color-accent: #F79F1F;
-  --template-color-accent-dark:#cc8720;
+  --template-color-accent: #f79f1f;
+  --template-color-accent-dark: #cc8720;
+
+  @media screen and (prefers-color-scheme: light) {
+    --template-color: #ffffff;
+    --template-color-opposing: #202020;
+    --template-color-accent: #f79f1f;
+    --template-color-accent-dark: #cc8720;
+  }
+
+  .light {
+    --template-color: #ffffff;
+    --template-color-opposing: #202020;
+    --template-color-accent: #f79f1f;
+    --template-color-accent-dark: #cc8720;
+  }
 }
 
 $template-color: var(--template-color);

@@ -7,7 +7,7 @@
   <a href="/post/aq3d_bot/"><img data-lazy="/assets/images/works/aq3d_bot_c.jpg" alt="AQ3D Discord Bot"/><p>AQ3D Discord Bot</p></a>
 </div>
 
-<div class="center-text">
+<div>
   <h1>A Back-end developer as intended.</h1>
   <p>Welcome to my website, you can find all sorts of informational posts and all my proud works. While also giving a download for you to try it out yourselves.</p>
   <h2>Some info about myself</h2>
@@ -21,6 +21,6 @@
     <li>UML-Diagrams</li>
     <li>Creation of REST API's</li>
   </ul>
-  <p>Want more info about me? Get into contact and I can send you my full <span class="italic">Curriculum Vitae</span></p>
+  <p>Want more info about me? Get into contact and I can send you my full <span class="italic">Curriculum Vitae.</span></p>
 </div>
 @endsection

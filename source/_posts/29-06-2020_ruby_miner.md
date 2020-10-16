@@ -4,6 +4,7 @@ title: Ruby Miner
 author: Gerben Veenhof
 date: 2020-06-29
 section: content
+link: https://github.com/nlxdodge/Advent-Of-Code
 ---
 
 In my current year I was learning Ruby as part of my internship. In the beginning I stuggled a lot to understand the dynamic language as is.
