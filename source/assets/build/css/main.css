@@ -515,6 +515,9 @@ footer {
 footer .header {
   font-size: 20px;
 }
+footer .jigsaw-link {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
 footer p {
   margin: 0 10px;
   padding: 20px 0;
