@@ -16,3 +16,9 @@ The only feature that was used a lot was to display the current server usage of 
 I also started working on a command to get the level and some stats that the AQ3D team exposes to us.
 
 ![Discord Bot](/assets/images/works/aq3d_bot_c.jpg)
+
+```css
+p {
+    float: none;
+}
+```
