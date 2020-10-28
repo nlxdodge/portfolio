@@ -1,10 +1,25 @@
 @extends('_layouts.master')
 @section('body')
 
-<div class="slick-slider">
-  <a href="/work/scrapyard/"><img data-lazy="/assets/images/works/scrapyard_c.jpg" alt="Scrapyard Minecraft mod"/><p>Scrapyard Mod</p></a>
-  <a href="/work/keydungeon/"><img data-lazy="/assets/images/works/keydungeon_c.jpg" alt="Keydungeon password manager"/><p>KeyDungeon</p></a>
-  <a href="/post/aq3d_bot/"><img data-lazy="/assets/images/works/aq3d_bot_c.jpg" alt="AQ3D Discord Bot"/><p>AQ3D Discord Bot</p></a>
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <a class="swiper-slide" href="/work/scrapyard/">
+      <div data-background="/assets/images/works/scrapyard_c.jpg" class="swiper-lazy">
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+      </div>
+    </a>
+    <a class="swiper-slide" href="/work/keydungeon/">
+      <div data-background="/assets/images/works/keydungeon_c.jpg" class="swiper-lazy">
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+      </div>
+    </a>
+    <a class="swiper-slide" href="/post/aq3d_bot/">
+      <div data-background="/assets/images/works/aq3d_bot_c.jpg" class="swiper-lazy">
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+      </div>
+    </a>
+  </div>
+  <div class="swiper-pagination"></div>
 </div>
 
 <div>

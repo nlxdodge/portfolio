@@ -1,55 +1,51 @@
-.slick-track
-{
-    display: flex !important;
-}
+.swiper-container {
+  height: 450px;
 
-.slick-slide
-{
-    height: inherit !important;
-}
+  .swiper-pagination.swiper-pagination-bullets {
+    .swiper-pagination-bullet {
+      margin: 0 12px;
+      width: 16px;
+      height: 16px;
+      opacity: 0.4;
 
-.slick-loading {
-  min-height: 400px;
-}
-
-.slick-slider {
-  position: relative;
-
-  .slick-slide {
-
-    img {
-      max-width: 100%;
+      &.swiper-pagination-bullet-active {
+        opacity: 1;
+        background-color: #fff;
+      }
     }
   }
 
-  .slick-dots {
-    li button {
-      width: 10px;
+  .swiper-wrapper {
+    .swiper-slide {
+      .swiper-lazy {
+        height: 100%;
+        background-size: cover;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      p {
+        @include media(">tablet") {
+          transform: translate(-50%, -60%);
+          font-size: 2em;
+        }
+
+        z-index: 2;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        color: #fff;
+        font-size: 1.2em;
+        margin: 10px;
+        text-align: center;
+        font-family: $template-header-font;
+
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 10px 35px;
+      }
     }
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  p {
-    @include media(">tablet") {
-      transform: translate(-50%, -60%);
-      font-size: 2em;
-    }
-
-    z-index: 2;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -20%);
-    color: #fff;
-    font-size: 1.2em;
-    margin: 10px;
-    text-align: center;
-    font-family: $template-header-font;
-
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px 35px;
   }
 }
