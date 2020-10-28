@@ -1,4 +1,5 @@
-import Swiper from "swiper/bundle";
+import Swiper, { Navigation, Pagination, Lazy, Autoplay, EffectFade } from 'swiper';
+Swiper.use([Navigation, Pagination, Lazy, Autoplay, EffectFade]);
 import "swiper/swiper-bundle.css";
 import Prism from "prismjs";
 

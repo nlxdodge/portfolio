@@ -364,11 +364,9 @@ html .light {
 html {
   position: relative;
   min-height: 100%;
-  transition: all 0.2s ease-in-out;
 }
 
 body {
-  transition: all 0.2s ease-in-out;
   background-color: var(--template-color);
   color: var(--template-color-opposing);
   font: normal 20px "Open Sans", Verdana, Arial, sans-serif;
