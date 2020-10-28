@@ -1,4 +1,10 @@
-import Swiper, { Navigation, Pagination, Lazy, Autoplay, EffectFade } from 'swiper';
+import Swiper, {
+  Navigation,
+  Pagination,
+  Lazy,
+  Autoplay,
+  EffectFade,
+} from "swiper";
 Swiper.use([Navigation, Pagination, Lazy, Autoplay, EffectFade]);
 import "swiper/swiper-bundle.css";
 import Prism from "prismjs";
@@ -39,8 +45,13 @@ function setTheme(theme) {
 
   // register swiper
   new Swiper(".swiper-container", {
+    autoplay: {
+      delay: 5000,
+    },
     loop: true,
-    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
     preloadImages: false,
     lazy: true,
     pagination: {

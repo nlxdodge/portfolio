@@ -14725,8 +14725,13 @@ function setTheme(theme) {
   prismjs_components_prism_core__WEBPACK_IMPORTED_MODULE_2___default.a.highlightAll(); // register swiper
 
   new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-container", {
+    autoplay: {
+      delay: 5000
+    },
     loop: true,
-    effect: "fade",
+    fadeEffect: {
+      crossFade: true
+    },
     preloadImages: false,
     lazy: true,
     pagination: {
