@@ -1,7 +1,7 @@
 @extends('_layouts.master')
 @section('body')
 
-<div class="works-container">
+<div class="work-container">
 @foreach ($works as $work)
     <a class="work-block" href="{{ $work->getUrl() }}">
         <img src="{{ $work->header_image }}" alt="{{ $work->title }}" />

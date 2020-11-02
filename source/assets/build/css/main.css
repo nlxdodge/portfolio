@@ -448,11 +448,17 @@ article img {
 
 .pagination {
   text-align: center;
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 .pagination a {
+  margin: 5px;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+}
+.pagination a:hover {
+  transform: scale(1.3, 1.3);
 }
 
 @font-face {
@@ -588,23 +594,23 @@ footer .social-media a .fab:hover {
   }
 }
 
-.works-container {
+.work-container {
   display: flex;
   align-items: stretch;
   flex-wrap: wrap;
 }
-.works-container .work-block {
+.work-container .work-block {
   text-decoration: none;
   flex: 1 1 calc(100% - 60px);
   margin: 30px 15px;
   transition: all 0.2s ease-in-out;
 }
 @media (min-width: 769px) {
-  .works-container .work-block {
+  .work-container .work-block {
     flex: 0 0 calc(50% - 60px);
   }
 }
-.works-container .work-block img {
+.work-container .work-block img {
   width: 100%;
   height: 245px;
   -o-object-fit: cover;
@@ -612,19 +618,50 @@ footer .social-media a .fab:hover {
   border: 1px solid transparent;
   transition: all 0.2s ease-in-out;
 }
-.works-container .work-block:hover > img {
+.work-container .work-block:hover > img {
   border: 1px solid var(--template-color-accent);
 }
-.works-container .work-block .work-title {
+.work-container .work-block .work-title {
   text-align: center;
   font-size: 24px;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   color: var(--template-color-opposing);
 }
-.works-container .work-block .work-title .sub {
+.work-container .work-block .work-title .sub {
   font-size: 12px;
   font-family: "Open Sans", Verdana, Arial, sans-serif;
 }
-.works-container .work-block:hover {
+.work-container .work-block:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.post-container {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 100%;
+  align-content: center;
+}
+.post-container ul {
+  list-style-type: square;
+}
+@media (min-width: 769px) {
+  .post-container {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+}
+.post-container .post-block {
+  text-decoration: none;
+  flex: 1 1 calc(100% - 60px);
+  margin: 5px 5px;
+  transition: all 0.2s ease-in-out;
+}
+@media (min-width: 769px) {
+  .post-container .post-block {
+    flex: 0 0 calc(50% - 60px);
+  }
+}
+.post-container .post-block:hover {
   transform: scale(1.05, 1.05);
 }
