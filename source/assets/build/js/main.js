@@ -14692,8 +14692,6 @@ swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MOD
 
 
 function toggleTheme() {
-  console.log("toggle");
-
   if (localStorage.getItem("theme") === "light") {
     setTheme("dark");
   } else {
@@ -14742,15 +14740,13 @@ function setTheme(theme) {
   }); // 404 error gif
 
   var gifs = document.getElementsByClassName("error-gif");
-  Array.from(gifs).forEach(function (element) {
-    element.addEventListener("click", function (gif) {
-      fetch("https://api.giphy.com/v1/gifs/random?api_key=LXYWwiKGkGMeBqKyOlb6tRBKfzIhmH91&tag=technical%20difficulties&rating=PG-13", {
-        method: "GET"
-      }).then(function (response) {
-        return response.json();
-      }).then(function (json) {
-        gif.attr("src", json.data.image_url);
-      });
+  Array.from(gifs).forEach(function (gif) {
+    fetch("https://api.giphy.com/v1/gifs/random?api_key=LXYWwiKGkGMeBqKyOlb6tRBKfzIhmH91&tag=technical%20difficulties&rating=PG-13", {
+      method: "GET"
+    }).then(function (response) {
+      return response.json();
+    }).then(function (json) {
+      gif.src = json.data.image_url;
     });
   });
 })();

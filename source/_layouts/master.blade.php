@@ -23,8 +23,7 @@
     <meta name="theme-color" content="#202020">
 
     <!-- scripts and styles -->
-    <link rel="preload" href="{{ mix('css/main.css', 'assets/build') }}" as="style">
-    <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     <script async src="https://kit.fontawesome.com/7ab1523f09.js" crossorigin="anonymous"></script>
     <script defer type="text/javascript" src="{{ mix('js/main.js', 'assets/build') }}"></script>
 

@@ -10,7 +10,6 @@ import "swiper/swiper-bundle.css";
 import Prism from "prismjs";
 
 function toggleTheme() {
-  console.log("toggle");
   if (localStorage.getItem("theme") === "light") {
     setTheme("dark");
   } else {
@@ -63,20 +62,18 @@ function setTheme(theme) {
 
   // 404 error gif
   let gifs = document.getElementsByClassName("error-gif");
-  Array.from(gifs).forEach((element) => {
-    element.addEventListener("click", (gif) => {
-      fetch(
-        "https://api.giphy.com/v1/gifs/random?api_key=LXYWwiKGkGMeBqKyOlb6tRBKfzIhmH91&tag=technical%20difficulties&rating=PG-13",
-        {
-          method: "GET",
-        }
-      )
-        .then(function(response) {
-          return response.json();
-        })
-        .then(function(json) {
-          gif.attr("src", json.data.image_url);
-        });
-    });
+  Array.from(gifs).forEach((gif) => {
+    fetch(
+      "https://api.giphy.com/v1/gifs/random?api_key=LXYWwiKGkGMeBqKyOlb6tRBKfzIhmH91&tag=technical%20difficulties&rating=PG-13",
+      {
+        method: "GET",
+      }
+    )
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(json) {
+        gif.src = json.data.image_url;
+      });
   });
 })();
