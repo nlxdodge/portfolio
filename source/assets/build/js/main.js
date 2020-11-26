@@ -14741,7 +14741,7 @@ function setTheme(theme) {
 
   var gifs = document.getElementsByClassName("error-gif");
   Array.from(gifs).forEach(function (gif) {
-    fetch("https://api.giphy.com/v1/gifs/random?api_key=LXYWwiKGkGMeBqKyOlb6tRBKfzIhmH91&tag=technical%20difficulties&rating=PG-13", {
+    fetch("https://api.giphy.com/v1/gifs/random?api_key=LXYWwiKGkGMeBqKyOlb6tRBKfzIhmH91&tag=404&rating=PG-13", {
       method: "GET"
     }).then(function (response) {
       return response.json();
@@ -14771,8 +14771,8 @@ function setTheme(theme) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\Stack\Eigenwerk\Development\Websites\Portfolio small\source\_assets\js\main.js */"./source/_assets/js/main.js");
-module.exports = __webpack_require__(/*! D:\Stack\Eigenwerk\Development\Websites\Portfolio small\source\_assets\sass\main.scss */"./source/_assets/sass/main.scss");
+__webpack_require__(/*! C:\Mega\Eigenwerk\Development\Websites\Portfolio small\source\_assets\js\main.js */"./source/_assets/js/main.js");
+module.exports = __webpack_require__(/*! C:\Mega\Eigenwerk\Development\Websites\Portfolio small\source\_assets\sass\main.scss */"./source/_assets/sass/main.scss");
 
 
 /***/ })
