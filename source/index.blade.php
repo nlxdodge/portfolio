@@ -3,7 +3,7 @@
 
 <div class="swiper-container">
   <div class="swiper-wrapper">
-    <a class="swiper-slide" href="/work/scrapyard/" aria-label="Read the Scrapyard Project">
+    <a class="swiper-slide" href="/work/Scrapyard/" aria-label="Read the Scrapyard Project">
       <div data-background="/assets/images/works/scrapyard_c.jpg" class="swiper-lazy">
         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
       </div>
