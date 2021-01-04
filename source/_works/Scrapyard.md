@@ -7,7 +7,7 @@ section: content
 header_image: /assets/images/works/scrapyard_c.jpg
 category: Java
 link: https://github.com/nlxdodge/scrapyard
-order: 1
+order: 3
 ---
 
 Scrapyard is my first ever minecraft mod that is basically a bunch of ideas gathered together into one mod.

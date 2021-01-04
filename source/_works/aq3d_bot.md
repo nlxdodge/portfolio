@@ -7,7 +7,7 @@ section: content
 header_image: /assets/images/works/aq3d_bot_c.jpg
 category: Java
 link: https://github.com/nlxdodge/C.A.T.E
-order: 3
+order: 1
 ---
 
 ![Discord Bot](/assets/images/works/aq3d_bot_c.jpg)
