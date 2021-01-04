@@ -18,12 +18,12 @@ function toggleTheme() {
 }
 
 function setTheme(theme = "dark") {
-  if (theme == "dark") {
-    localStorage.setItem("theme", "dark");
-    document.body.classList.remove("light");
-  } else {
+  if (theme == "light") {
     localStorage.setItem("theme", "light");
     document.body.classList.add("light");
+  } else {
+    localStorage.setItem("theme", "dark");
+    document.body.classList.remove("light");
   }
 }
 

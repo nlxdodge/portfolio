@@ -6652,6 +6652,10 @@ footer .header {
 footer .jigsaw-link {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
+footer .jigsaw-link i {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
 footer p {
   margin: 0 10px;
   padding: 20px 0;

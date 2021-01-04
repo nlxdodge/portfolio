@@ -14699,13 +14699,15 @@ function toggleTheme() {
   }
 }
 
-function setTheme(theme) {
-  if (theme == "dark") {
-    localStorage.setItem("theme", "dark");
-    document.body.classList.remove("light");
-  } else {
+function setTheme() {
+  var theme = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "dark";
+
+  if (theme == "light") {
     localStorage.setItem("theme", "light");
     document.body.classList.add("light");
+  } else {
+    localStorage.setItem("theme", "dark");
+    document.body.classList.remove("light");
   }
 }
 
