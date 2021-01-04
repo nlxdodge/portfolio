@@ -1,6 +1,9 @@
 /* plugins */
 @import "plugins/normalize";
 @import "plugins/include-media.scss";
+@import "plugins/fontawesome/fontawesome.scss";
+@import "plugins/fontawesome/solid.scss";
+@import "plugins/fontawesome/brands.scss";
 
 /* site styling */
 @import "_mixins";

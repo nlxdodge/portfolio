@@ -23,9 +23,7 @@
     <meta name="theme-color" content="#202020">
 
     <!-- scripts and styles -->
-
     <style>{{ inline(mix('css/main.css', 'assets/build')) }}</style>
-    <script async src="https://kit.fontawesome.com/7ab1523f09.js" crossorigin="anonymous"></script>
     <script defer type="text/javascript" src="{{ mix('js/main.js', 'assets/build') }}"></script>
 
     @if ($page->production)

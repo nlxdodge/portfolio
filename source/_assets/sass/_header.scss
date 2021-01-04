@@ -1,7 +1,7 @@
 header {
   nav {
     margin: 0 auto 25px auto;
-    max-width: 1024px;
+    max-width: 720px;
     display: flex;
     justify-content: space-evenly;
 
@@ -9,7 +9,7 @@ header {
       margin-bottom: 75px;
     }
 
-    a {
+    a, div {
       color: $template-color-opposing;
       padding: 6px 9px;
       font-size: 1.25em;
@@ -25,6 +25,11 @@ header {
 
       &.selected {
         border-bottom: 5px solid $template-color-accent;
+      }
+
+      &:hover {
+          cursor: pointer;
+          color: $template-color-accent;
       }
 
       &:hover:not(.icon) {
