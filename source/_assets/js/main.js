@@ -17,7 +17,7 @@ function toggleTheme() {
   }
 }
 
-function setTheme(theme) {
+function setTheme(theme = "dark") {
   if (theme == "dark") {
     localStorage.setItem("theme", "dark");
     document.body.classList.remove("light");
