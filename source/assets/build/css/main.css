@@ -6797,3 +6797,7 @@ footer .social-media a .fab:hover {
 .post-container .post-block:hover {
   transform: scale(1.05, 1.05);
 }
+
+.error img {
+  max-width: 100%;
+}

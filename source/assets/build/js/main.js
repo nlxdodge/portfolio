@@ -14922,7 +14922,7 @@ function setTheme() {
 
   var gifs = document.getElementsByClassName("error-gif");
   Array.from(gifs).forEach(function (gif) {
-    fetch("https://api.giphy.com/v1/gifs/random?api_key=LXYWwiKGkGMeBqKyOlb6tRBKfzIhmH91&tag=404&rating=PG-13", {
+    fetch("https://api.giphy.com/v1/gifs/random?api_key=LXYWwiKGkGMeBqKyOlb6tRBKfzIhmH91&tag=error&rating=PG-13", {
       method: "GET"
     }).then(function (response) {
       return response.json();

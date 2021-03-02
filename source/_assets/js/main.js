@@ -64,7 +64,7 @@ function setTheme(theme = "dark") {
   let gifs = document.getElementsByClassName("error-gif");
   Array.from(gifs).forEach((gif) => {
     fetch(
-      "https://api.giphy.com/v1/gifs/random?api_key=LXYWwiKGkGMeBqKyOlb6tRBKfzIhmH91&tag=404&rating=PG-13",
+      "https://api.giphy.com/v1/gifs/random?api_key=LXYWwiKGkGMeBqKyOlb6tRBKfzIhmH91&tag=error&rating=PG-13",
       {
         method: "GET",
       }

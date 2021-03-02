@@ -3,17 +3,17 @@
 
 <div class="swiper-container">
   <div class="swiper-wrapper">
-    <a class="swiper-slide" href="/work/keydungeon/" aria-label="Read the Keydungeon Project">
+    <a class="swiper-slide" href="/work/keydungeon/" aria-label="Check the Keydungeon project">
       <div data-background="/assets/images/works/keydungeon_c.jpg" class="swiper-lazy">
         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
       </div>
     </a>
-    <a class="swiper-slide" href="/post/aq3d_bot/" aria-label="Read the AQ3D Project">
+    <a class="swiper-slide" href="/work/aq3d_bot/" aria-label="Check the AQ3D project">
       <div data-background="/assets/images/works/aq3d_bot_c.jpg" class="swiper-lazy">
         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
       </div>
     </a>
-    <a class="swiper-slide" href="/work/Scrapyard/" aria-label="Read the Scrapyard Project">
+    <a class="swiper-slide" href="/work/Scrapyard/" aria-label="Check the Scrapyard project">
       <div data-background="/assets/images/works/scrapyard_c.jpg" class="swiper-lazy">
         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
       </div>
@@ -23,7 +23,7 @@
 </div>
 
 <div>
-  <h1>Back-end redefined</h1>
+  <h1>Backend redefined</h1>
   <p>Welcome to my humble site, you can find all sorts of informational posts and my proud works. While also giving a sneak peek for you to try it out yourselves.</p>
   <h2>How it al started</h2>
   <p>I Started of my career with interests in computer science at a very young age. And took that to school where I choose to be an aspiring game developer. But soon
