@@ -4,14 +4,14 @@ use Illuminate\Support\Str;
 
 return [
     'production' => false,
-    'title' => 'Gerben Veenhof',
+    'title' => 'Gerben Veenhof | Portfolio | Blog',
     'host' => 'https://gerbenveenhof.nl',
-    'description' => 'This is my personal website, find software, mods or other programs that I wrote or contact me for more information.',
+    'description' => 'This is my personal portfolio/blogging website, find applications, software, mods or other programs that I wrote for school or my job or contact me for more info or just to have a quick chat.',
     'collections' => [
         'works' => [
             'path' => 'work/{filename}',
             'header_image' => '',
-            'category' => 'minecraft',
+            'category' => 'application',
             'sort' => 'order',
         ],
         'posts' => [
