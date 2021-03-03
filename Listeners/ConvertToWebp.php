@@ -15,8 +15,8 @@ class ConvertToWebp
             if ($this->isImage($path)) {
                 $root = dirname(__DIR__);
                 $extension = pathinfo($path, PATHINFO_EXTENSION);
-                $source = $root . '/build_local' . $path;
-                $destination = $root . '/build_local' . str_replace('.' . $extension, '', $path) . '.webp';
+                $source = $root . '/build_production' . $path;
+                $destination = $root . '/build_production' . str_replace('.' . $extension, '', $path) . '.webp';
                 WebPConvert::convert($source, $destination);
             }
         });
