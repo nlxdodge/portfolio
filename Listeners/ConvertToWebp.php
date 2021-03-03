@@ -22,9 +22,9 @@ class ConvertToWebp
         });
     }
 
-    public function rightPath($path) 
+    public function rightPath($path)
     {
-        return str_contains("/assets/images", $path);
+        return str_contains($path, "/assets/images/");
     }
 
     public function isImage($path)
