@@ -2,5 +2,5 @@
 
 return [
     'production' => true,
-    'host' => 'http://gerbenveenhof.nl',
+    'host' => 'https://gerbenveenhof.nl',
 ];
