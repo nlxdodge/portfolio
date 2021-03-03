@@ -25,7 +25,7 @@ class ConvertToWebp
     public function isImage($path)
     {
         $extension = pathinfo($path, PATHINFO_EXTENSION);
-        $types = ['png', 'jpg', 'jpeg', 'gif'];
+        $types = ['png', 'jpg', 'jpeg'];
         return in_array($extension, $types);
     }
 }
