@@ -6492,6 +6492,11 @@ a:hover {
   color: var(--template-color-accent-dark);
 }
 
+noscript {
+  text-align: center;
+  display: block;
+}
+
 h1,
 h2,
 h3,

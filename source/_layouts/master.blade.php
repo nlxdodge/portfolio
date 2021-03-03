@@ -30,6 +30,8 @@
 <body>
     @include('_partials.header')
     <div class="container">
+        <noscript>🚧 Some element of my website will not be working without javascript (Like the switch to light/dark mode, image slider and error page).
+            But most of it is still readable, so enjoy! 🚧</noscript>
         @yield('body')
     </div>
     @include('_partials.footer')
