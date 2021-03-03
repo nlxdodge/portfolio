@@ -4,17 +4,17 @@
 <div class="swiper-container">
   <div class="swiper-wrapper">
     <a class="swiper-slide" href="/work/keydungeon/" aria-label="Check the Keydungeon project">
-      <div data-background="/assets/images/works/keydungeon_c.jpg" class="swiper-lazy">
+      <div data-background="/assets/images/works/keydungeon_c.webp" class="swiper-lazy">
         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
       </div>
     </a>
     <a class="swiper-slide" href="/work/aq3d_bot/" aria-label="Check the AQ3D project">
-      <div data-background="/assets/images/works/aq3d_bot_c.jpg" class="swiper-lazy">
+      <div data-background="/assets/images/works/aq3d_bot_c.webp" class="swiper-lazy">
         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
       </div>
     </a>
     <a class="swiper-slide" href="/work/Scrapyard/" aria-label="Check the Scrapyard project">
-      <div data-background="/assets/images/works/scrapyard_c.jpg" class="swiper-lazy">
+      <div data-background="/assets/images/works/scrapyard_c.webp" class="swiper-lazy">
         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
       </div>
     </a>

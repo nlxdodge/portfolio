@@ -4,7 +4,7 @@ title: KeyDungeon
 author: Gerben Veenhof
 date: 2020-06-26
 section: content
-header_image: /assets/images/works/keydungeon_c.jpg
+header_image: /assets/images/works/keydungeon_c.webp
 category: PHP/JS
 order: 2
 ---
