@@ -6495,6 +6495,7 @@ a:hover {
 noscript {
   text-align: center;
   display: block;
+  margin-bottom: 25px;
 }
 
 h1,
