@@ -5,7 +5,7 @@ use Illuminate\Support\Str;
 return [
     'production' => false,
     'title' => 'Gerben Veenhof | Portfolio | Blog',
-    'host' => 'https://gerbenveenhof.nl',
+    'host' => 'http://localhost:3000',
     'description' => 'This is my personal portfolio/blogging website, find applications, software, mods or other programs that I wrote for school or my job or contact me for more info or just to have a quick chat.',
     'collections' => [
         'works' => [

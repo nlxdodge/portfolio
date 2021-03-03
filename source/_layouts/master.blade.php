@@ -10,6 +10,11 @@
     <link rel="canonical" href="{{ $page->host }}{{ $page->getUrl() }}">
     <meta name="description" content="{{ $page->description }}">
     <title>{{ $page->title }}</title>
+    @if(str_contains($page->getPath(), '/work/'))
+    <base href="{{ $page->host }}/works">
+    @elseif(str_contains($page->getPath(), '/post/'))
+    <base href="{{ $page->host }}/posts">
+    @endif
 
     <!-- favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
