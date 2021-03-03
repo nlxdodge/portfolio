@@ -10,8 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy
     steps:
-      - uses: actions/checkout@master
-      - name: Install dependencies
+      - name: Checkout Code
+        uses: actions/checkout@master
+      - name: Install Imagemagick
+        run: sudo apt install imagemagick
+      - name: Install composer
         uses: php-actions/composer@v2
         with:
           command: require tightenco/jigsaw
@@ -21,7 +24,7 @@ jobs:
           node-version: 13.x
       - run: npm install
       - run: npm run production
-      - name: FTP Deploy
+      - name: Deploy to production
         uses: sebastianpopp/ftp-action@releases/v2
         with:
           host: ${{ secrets.FTP_DOMAIN }}
