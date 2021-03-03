@@ -1,4 +1,6 @@
-<?php namespace App\Listeners;
+<?php
+
+namespace App\Listeners;
 
 use TightenCo\Jigsaw\Jigsaw;
 use samdark\sitemap\Sitemap;
@@ -11,7 +13,7 @@ class GenerateSitemap
         $sitemap = new Sitemap($jigsaw->getDestinationPath() . '/sitemap.xml');
 
         collect($jigsaw->getOutputPaths())->each(function ($path) use ($host, $sitemap) {
-            if (!strlen($path) == 0 && !$this->isAsset($path)) {
+            if (!$this->isAsset($path)) {
                 $sitemap->addItem($host . $path, time(), Sitemap::WEEKLY);
             }
         });
