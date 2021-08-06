@@ -17,6 +17,7 @@ class ConvertToWebp
                 $extension = pathinfo($path, PATHINFO_EXTENSION);
                 $source = $root . '/build_production' . $path;
                 $destination = $root . '/build_production' . str_replace('.' . $extension, '', $path) . '.webp';
+                print("Destination: " . $destination . "\n");
                 WebPConvert::convert($source, $destination);
             }
         });
