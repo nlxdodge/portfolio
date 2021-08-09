@@ -13,7 +13,7 @@ a {
   color: $template-color-accent;
 
   &:hover {
-    color: $template-color-accent-dark;
+    color: $template-color-accent-opposing;
   }
 }
 
@@ -75,21 +75,21 @@ article {
   display: inline-block;
   background-color: $template-color-accent;
   font-family: $template-header-font;
-  font-size: 1.25em;
+  font-size: 1em;
   color: $template-color;
   text-decoration: none;
   padding: 14px 24px;
   transition: all 0.2s ease-in-out;
-  border-radius: 10px;
+  border-radius: 7px;
 
   i {
-    font-size: 1.25em;
+    font-size: 1.2em;
     vertical-align: text-bottom;
   }
 
   &:hover {
     color: $template-color;
-    background-color: $template-color-accent-dark;
+    background-color: $template-color-accent-opposing;
   }
 }
 

@@ -9,6 +9,9 @@
     @if ($page->link)
       <a class="button" href="{{ $page->link }}" aria-label="Link"><i aria-hidden="true" class="fas fa-link"></i> Link</a>
     @endif
+    @if ($page->code)
+      <a class="button" href="{{ $page->code }}" aria-label="Code"><i aria-hidden="true" class="fas fa-code"></i> Code</a>
+    @endif
   </div>
 </article>
 @endsection

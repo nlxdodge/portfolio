@@ -7,7 +7,6 @@ section: content
 header_image: /assets/images/works/aq3d_bot_c.webp
 category: Java
 link: https://github.com/nlxdodge/C.A.T.E
-order: 1
 ---
 
 ![Discord Bot](/assets/images/works/aq3d_bot_c.webp)
@@ -18,7 +17,6 @@ I was playing the game and also switching between a lot of different servers for
 The Discord bot had a command that could retrieve all the server information with the actual amount of people on it. But sadly the bot was removed by the owner of the bot.
 
 So this was an oppurtunity for me to get my own skills up again. So I grabbed the latest version of [Discord4J](https://discord4j.com/) and coded away. Getting the url for the data with [WireShark](https://www.wireshark.org/), and making a good looking message and image for the bot.
-
 
 Here is a preview of the written code. Which maps on the MessageCreateEvent, checks if the message is not from the bot itself, then checks the command.
 

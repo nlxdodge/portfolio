@@ -3,6 +3,11 @@
 
 <div class="swiper-container">
   <div class="swiper-wrapper">
+    <a class="swiper-slide" href="/work/korfbal_trainer/" aria-label="Check the Korfbal Trainer project">
+      <div data-background="/assets/images/works/korfbal_trainer.webp" class="swiper-lazy">
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+      </div>
+    </a>
     <a class="swiper-slide" href="/work/keydungeon/" aria-label="Check the Keydungeon project">
       <div data-background="/assets/images/works/keydungeon_c.webp" class="swiper-lazy">
         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>

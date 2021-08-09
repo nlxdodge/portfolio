@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="referrer" content="always">
-    <link rel="canonical" href="https://gerbenveenhof.nl/work/aq3d_bot">
+    <link rel="canonical" href="https://gerbenveenhof.nl/work/korfbal_trainer">
     <meta name="description" content="This is my personal portfolio/blogging website, find applications, software, mods or other programs that I wrote for school or my job or contact me for more info or just to have a quick chat.">
-    <title>C.A.T.E Discord Bot</title>
+    <title>Korfbal Trainer</title>
         <base href="https://gerbenveenhof.nl/works">
     
     <!-- favicons -->
@@ -50,34 +50,43 @@
         <noscript>🚧 Some element of my website will not be working without javascript (Like the switch to light/dark mode, image slider and error page).
             But most of it is still readable, so enjoy! 🚧</noscript>
         <article class="work">
-  <h1>C.A.T.E Discord Bot</h1>
-  <p class="italic">Made by: Gerben Veenhof - last update: 26-November-2020</p>
-  <p><img src="/assets/images/works/aq3d_bot_c.webp" alt="Discord Bot" /></p>
+  <h1>Korfbal Trainer</h1>
+  <p class="italic">Made by: Gerben Veenhof - last update: 6-August-2021</p>
+  <p>While it's no secret that people can't go without sports or some exercise to remain fit, our korfbal team most of the time didn't have the time to create a training for ourselves. For that I had the idea to gather a lot of exercises together, put them in some sort of database and create a simple generator for it. That way we always would have structured training for ourselves.</p>
 
-<p><a href="https://aq3d.com/">AQ3D</a> is the latest game from <a href="https://www.artix.com/">Artix Entertainment</a>.
-I was playing the game and also switching between a lot of different servers for some area's in the game. But not knowing which server had the most people, the Discord bot came in for the rescue.</p>
+<p>I started out by using the new Vue 3.0 version for this project as I wanted to learn that, together with TypeScript, as Vue didn't really put an emphasis on TypeScript in version 2.0.</p>
 
-<p>The Discord bot had a command that could retrieve all the server information with the actual amount of people on it. But sadly the bot was removed by the owner of the bot.</p>
+<p>As well as testing and actually making a working project in typescript I also had to think of a way to structure the data for the application. For that I used a static json file in the project that it reads (as all data in there is publicly available anyways). I combined the json file with the Vuex Store to filter or update the data when needed.</p>
 
-<p>So this was an oppurtunity for me to get my own skills up again. So I grabbed the latest version of <a href="https://discord4j.com/">Discord4J</a> and coded away. Getting the url for the data with <a href="https://www.wireshark.org/">WireShark</a>, and making a good looking message and image for the bot.</p>
+<pre><code class="language-javascript">import data from './korfbal.json'
 
-<p>Here is a preview of the written code. Which maps on the MessageCreateEvent, checks if the message is not from the bot itself, then checks the command.</p>
-
-<p>If that all checks out it starts the creation of the message and getting the required info from AQ3D servers to return it to Discord.</p>
-
-<pre><code class="language-java">client.getEventDispatcher().on(MessageCreateEvent.class).map(MessageCreateEvent::getMessage)
-        .filter(message -&gt; message.getAuthor().map(user -&gt; !user.isBot()).orElse(false))
-        .filter(message -&gt; message.getContent().equalsIgnoreCase("-servers")).flatMap(Message::getChannel)
-        .flatMap(channel -&gt; channel.createEmbed(spec -&gt; spec.setAuthor("🤖 C.A.T.E", null, LOGO)
-            .setTitle("⚔ Adventure Quest 3D Servers ⚔").setDescription(api.getServerInfo())))
-        .subscribe();
+export default createStore({
+  actions: {
+    loadData ({ commit }) {
+      commit('setCategories', data.categories)
+      commit('setExercises', data.exercises)
+    }
+  }
+})
 </code></pre>
 
-<p>For the current state of the project, check out Github with the Link button.</p>
+<p>This way I have no need for a database, because frankly this application doesn't really need one <em>yet</em>.
+I also learned a much about how Typescript work, but I am frankly not up to speed yet with working with it. It still takes a lot of searching for those small details.</p>
+
+<p>Like making a class that actually should have been an interface all along, like so:</p>
+
+<pre><code class="language-javascript">export interface Category {
+    label: string,
+    value: string,
+}
+</code></pre>
+
+<p>I am, as of writing, still not done with the project. The generator needs some more attention before it is actually usable. But the collection of exercises is already available to look at. Which for our team, is a nice helping hand.</p>
   <div class="center-text margin-top-50">
     <a class="button" href="/works" aria-label="All works"><i aria-hidden="true" class="fas fa-chevron-circle-left"></i> All works</a>
-          <a class="button" href="https://github.com/nlxdodge/C.A.T.E" aria-label="Link"><i aria-hidden="true" class="fas fa-link"></i> Link</a>
-          </div>
+          <a class="button" href="https://korfbal-trainer.netlify.app/" aria-label="Link"><i aria-hidden="true" class="fas fa-link"></i> Link</a>
+              <a class="button" href="https://github.com/nlxdodge/korfbal-trainer" aria-label="Code"><i aria-hidden="true" class="fas fa-code"></i> Code</a>
+      </div>
 </article>
     </div>
     <footer>

@@ -6,18 +6,16 @@ use TightenCo\Jigsaw\Jigsaw;
 use WebPConvert\WebPConvert;
 
 
-
 class ConvertToWebp
 {
     public function handle(Jigsaw $jigsaw)
     {
-        collect($jigsaw->getOutputPaths())->each(function ($path) {
+        collect($jigsaw->getOutputPaths())->each(function ($path) use(&$jigsaw) {
             if ($this->rightPath($path) && $this->isImage($path)) {
                 $root = dirname(__DIR__);
                 $extension = pathinfo($path, PATHINFO_EXTENSION);
-                $source = $root . '/build_production' . $path;
-                $destination = $root . '/build_production' . str_replace('.' . $extension, '', $path) . '.webp';
-                print("Destination: " . $destination . "\n");
+                $source = $root . '/build_' . $jigsaw->getEnvironment() . $path;
+                $destination = $root . '/build_' . $jigsaw->getEnvironment() . str_replace('.' . $extension, '', $path) . '.webp';
                 WebPConvert::convert($source, $destination);
             }
         });

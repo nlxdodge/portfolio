@@ -4,8 +4,9 @@ import Swiper, {
   Lazy,
   Autoplay,
   EffectFade,
+  Mousewheel
 } from "swiper";
-Swiper.use([Navigation, Pagination, Lazy, Autoplay, EffectFade]);
+Swiper.use([Navigation, Pagination, Lazy, Autoplay, EffectFade, Mousewheel]);
 import "swiper/swiper-bundle.css";
 import Prism from "prismjs";
 
@@ -51,6 +52,8 @@ function setTheme(theme = "dark") {
     fadeEffect: {
       crossFade: true,
     },
+    mousewheel: true,
+    grabCursor: true,
     preloadImages: false,
     lazy: true,
     pagination: {

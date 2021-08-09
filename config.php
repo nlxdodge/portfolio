@@ -12,7 +12,7 @@ return [
             'path' => 'work/{filename}',
             'header_image' => '',
             'category' => 'application',
-            'sort' => 'order',
+            'sort' => '-date',
         ],
         'posts' => [
             'path' => 'post/{filename}',
