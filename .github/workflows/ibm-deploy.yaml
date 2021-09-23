@@ -29,12 +29,22 @@ jobs:
         run: npm install
       - name: Produce production build
         run: npm run production
+      - name: Upload artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: static-portfolio
+          path: "/build_production"
 
   deploy:
     needs: [build]
     runs-on: ubuntu-latest
     name: Deploy to IBM
     steps:
+      - name: Download artifact
+        uses: actions/download-artifact@master
+        with:
+          name: static-portfolio
+          path: "/build_production"
       - name: Minio deploy to IBM
         uses: hkdobrev/minio-deploy-action@v1
         with:
