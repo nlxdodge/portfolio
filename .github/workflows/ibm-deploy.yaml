@@ -15,26 +15,25 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@master
-
       - name: Install Imagemagick
         run: sudo apt install imagemagick
-
       - name: Install Composer
         uses: php-actions/composer@v2
         with:
           command: require tightenco/jigsaw
-
       - name: Setup Node version 13
         uses: actions/setup-node@v1
         with:
           node-version: 13.x
-
       - name: Install all modules
-        run: npm Install
-
+        run: npm install
       - name: Produce production build
         run: npm run production
 
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy to IBM
+    steps:
       - name: Minio deploy to IBM
         uses: hkdobrev/minio-deploy-action@v1
         with:
