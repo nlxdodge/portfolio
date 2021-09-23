@@ -36,5 +36,5 @@ jobs:
           access_key: ${{ secrets.MINIO_ACCESS_KEY }}
           secret_key: ${{ secrets.MINIO_SECRET_KEY }}
           bucket: "static-portfolio"
-          source_dir: "/build_production"
-          target_dir: "/"
+          source_dir: build_production/
+          target_dir: /
