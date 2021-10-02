@@ -10,3 +10,6 @@ sonar-project.properties
 # ignore local and staging builds
 /build_local/
 /build_staging/
+
+# ignore local sonarscanner caching
+.scannerwork
