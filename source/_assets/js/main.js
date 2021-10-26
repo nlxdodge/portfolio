@@ -27,7 +27,14 @@ function setTheme(theme = "dark") {
   }
 }
 
-(function() {
+(function () {
+  // check the default theme from the user
+  const darkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+  darkScheme.addEventListener("change", () => {
+    toggleTheme();
+  });
+
   // set the default theme from storage on load
   setTheme(localStorage.getItem("theme"));
 
@@ -70,10 +77,10 @@ function setTheme(theme = "dark") {
         method: "GET",
       }
     )
-      .then(function(response) {
+      .then(function (response) {
         return response.json();
       })
-      .then(function(json) {
+      .then(function (json) {
         gif.src = json.data.image_url;
       });
   });
