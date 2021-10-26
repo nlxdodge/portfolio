@@ -6,11 +6,6 @@ import Swiper, {
   EffectFade
 } from "swiper";
 Swiper.use([Navigation, Pagination, Lazy, Autoplay, EffectFade]);
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/autoplay';
-import 'swiper/css/fadeEffect';
 import Prism from "prismjs";
 
 function toggleTheme() {
