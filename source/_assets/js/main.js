@@ -6,7 +6,11 @@ import Swiper, {
   EffectFade
 } from "swiper";
 Swiper.use([Navigation, Pagination, Lazy, Autoplay, EffectFade]);
-import "swiper/swiper-bundle.css";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
+import 'swiper/css/fadeEffect';
 import Prism from "prismjs";
 
 function toggleTheme() {
@@ -30,7 +34,6 @@ function setTheme(theme = "dark") {
 (function () {
   // check the default theme from the user
   const darkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-
   darkScheme.addEventListener("change", () => {
     toggleTheme();
   });
@@ -50,7 +53,7 @@ function setTheme(theme = "dark") {
   Prism.highlightAll();
 
   // register swiper
-  new Swiper(".swiper-container", {
+  const swiper = new Swiper(".swiper-container", {
     autoplay: {
       delay: 5000,
     },
