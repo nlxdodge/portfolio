@@ -3,8 +3,15 @@
     [
       "prismjs",
       {
-        "languages": ["javascript", "css", "markup", "scss", "python", "java", "sql"],
-        "plugins": ["line-numbers"],
+        "languages": [
+          "javascript",
+          "scss",
+          "python",
+          "ruby",
+          "java",
+          "sql"
+        ],
+        "plugins": [],
         "theme": "okaidia",
         "css": true
       }
