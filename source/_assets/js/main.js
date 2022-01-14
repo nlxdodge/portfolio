@@ -1,12 +1,10 @@
+import Prism from "prismjs";
 import Swiper, {
-  Navigation,
-  Pagination,
-  Lazy,
   Autoplay,
-  EffectFade
+  EffectFade, Lazy, Navigation,
+  Pagination
 } from "swiper";
 Swiper.use([Navigation, Pagination, Lazy, Autoplay, EffectFade]);
-import Prism from "prismjs";
 
 function toggleTheme() {
   if (localStorage.getItem("theme") === "light") {
@@ -79,7 +77,7 @@ function setTheme(theme = "dark") {
         return response.json();
       })
       .then(function (json) {
-        gif.src = json.data.url;
+        gif.src = json.data.images.downsized_medium;
       });
   });
 })();
