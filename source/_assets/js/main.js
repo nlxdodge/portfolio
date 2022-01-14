@@ -77,7 +77,7 @@ function setTheme(theme = "dark") {
         return response.json();
       })
       .then(function (json) {
-        gif.src = json.data.images.downsized_medium;
+        gif.src = json.data.images.downsized_medium.url;
       });
   });
 })();
