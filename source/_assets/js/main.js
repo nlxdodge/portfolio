@@ -79,7 +79,7 @@ function setTheme(theme = "dark") {
         return response.json();
       })
       .then(function (json) {
-        gif.src = json.data.image_url;
+        gif.src = json.data.url;
       });
   });
 })();
