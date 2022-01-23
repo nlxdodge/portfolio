@@ -46,7 +46,7 @@ function setTheme(theme = "dark") {
   Prism.highlightAll();
 
   // register swiper
-  const swiper = new Swiper(".swiper-container", {
+  new Swiper(".swiper-container", {
     autoplay: {
       delay: 5000,
     },
@@ -62,22 +62,5 @@ function setTheme(theme = "dark") {
       type: "bullets",
       clickable: true,
     },
-  });
-
-  // 404 error gif
-  let gifs = document.getElementsByClassName("error-gif");
-  Array.from(gifs).forEach((gif) => {
-    fetch(
-      "https://api.giphy.com/v1/gifs/random?api_key=LXYWwiKGkGMeBqKyOlb6tRBKfzIhmH91&tag=error&rating=PG-13",
-      {
-        method: "GET",
-      }
-    )
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (json) {
-        gif.src = json.data.images.downsized_medium.url;
-      });
   });
 })();
