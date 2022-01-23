@@ -51,6 +51,10 @@ function setTheme(theme = "dark") {
   // set the default theme from storage on load
   setTheme(localStorage.getItem("theme"));
 
+  // set error quote
+  let quoteDiv = document.getElementById("error-quote");
+  quoteDiv.innerHTML = randomFromArray(quotes);
+
   // register toggle color button
   let buttons = document.getElementsByClassName("toggle-colors");
   Array.from(buttons).forEach((element) => {
@@ -80,8 +84,4 @@ function setTheme(theme = "dark") {
       clickable: true,
     },
   });
-
-  // set error quote
-  let quoteDiv = document.getElementById("error-quote");
-  quoteDiv.innerHTML = randomFromArray(quotes);
 })();
