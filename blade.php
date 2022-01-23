@@ -14,6 +14,6 @@ return [
             '"The worst battle is between what you know, and what you feel" - Voilet Evergarden',
             '"I know we said goodbye, but I didn\'t know. It was forever." - Voilet Evergarden',
         ];
-        return array_rand($quotes);
+        return $quotes[array_rand($quotes)];
     }
 ];
