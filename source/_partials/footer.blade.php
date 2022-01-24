@@ -7,7 +7,8 @@
             <a href="https://twitter.com/gerbenveenhof" aria-label="Twitter link"><i aria-hidden="true" class="fab fa-twitter-square"></i></a>
             <a href="https://www.reddit.com/user/nlxdodge" aria-label="Reddit link"><i aria-hidden="true" class="fab fa-reddit-square"></i></a>
         </div>
-        <p><i aria-hidden="true" aria-label="Copyright" class="fas fa-copyright"></i> Gerben Veenhof | {{ date("Y") }} | Made with <a class="jigsaw-link" href="https://jigsaw.tighten.co/" aria-label="Heart">Jigsaw <i aria-hidden="true"  class="fas fa-heart"></i> | <div id="wcb" class="carbonbadge wcb-d"></div></p>
+        <p><i aria-hidden="true" aria-label="Copyright" class="fas fa-copyright"></i> Gerben Veenhof | {{ date("Y") }} | Made with <a class="jigsaw-link" href="https://jigsaw.tighten.co/" aria-label="Heart">Jigsaw <i aria-hidden="true"  class="fas fa-heart"></i></p>
+        <div id="wcb" class="carbonbadge wcb-d"></div>
         <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
     </div>
 </footer>
