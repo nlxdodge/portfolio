@@ -52,11 +52,11 @@ function setTheme(theme = "dark") {
   setTheme(localStorage.getItem("theme"));
 
   // set error quote
-  let quoteDiv = document.getElementById("error-quote");
+  const quoteDiv = document.getElementById("error-quote");
   quoteDiv.innerHTML = randomFromArray(quotes);
 
   // register toggle color button
-  let buttons = document.getElementsByClassName("toggle-colors");
+  const buttons = document.getElementsByClassName("toggle-colors");
   Array.from(buttons).forEach((element) => {
     element.addEventListener("click", () => {
       toggleTheme();
@@ -67,7 +67,7 @@ function setTheme(theme = "dark") {
   Prism.highlightAll();
 
   // register swiper
-  new Swiper(".swiper-container", {
+  const swiper = new Swiper(".swiper-container", {
     autoplay: {
       delay: 5000,
     },
