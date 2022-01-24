@@ -53,7 +53,7 @@ function setTheme(theme = "dark") {
 
   // set error quote
   const quoteDiv = document.getElementsByClassName("error-quote");
-  Array.from(buttons).forEach((element) => {
+  Array.from(quoteDiv).forEach((element) => {
     element.innerHTML = randomFromArray(quotes);
   });
   
