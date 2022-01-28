@@ -1,4 +1,4 @@
-/* plugins */
+/* Plugin SCSS */
 @import "~normalize.css/normalize";
 @import "~include-media/dist/_include-media";
 @import "~swiper/scss";
@@ -6,7 +6,7 @@
 @import "plugins/fontawesome/solid";
 @import "plugins/fontawesome/brands";
 
-/* site styling */
+/* Site SCSS */
 @import "_mixins";
 @import "_settings";
 @import "_defaults";
