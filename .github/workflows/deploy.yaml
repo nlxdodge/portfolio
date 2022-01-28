@@ -23,6 +23,7 @@ jobs:
         with:
           node-version: 16.x
       - run: npm install
+      - run: npm ls
       - run: npm run prod
       - name: Deploy to production
         uses: sebastianpopp/ftp-action@releases/v2
