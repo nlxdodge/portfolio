@@ -18,10 +18,10 @@ jobs:
         uses: php-actions/composer@v2
         with:
           command: require tightenco/jigsaw
-      - name: Setup Node version 13
+      - name: Setup Node version 16
         uses: actions/setup-node@v1
         with:
-          node-version: 13.x
+          node-version: 16.x
       - run: npm install
       - run: npm run prod
       - name: Deploy to production
