@@ -1,10 +1,10 @@
 /* plugins */
-@import "plugins/normalize";
-@import "plugins/include-media";
-@import "plugins/swiper";
-@import "plugins/fontawesome/fontawesome.scss";
-@import "plugins/fontawesome/solid.scss";
-@import "plugins/fontawesome/brands.scss";
+@import "~noralize.css/normalize";
+@import "~include-media/dist/_include-media";
+@import "~swiper/swiper";
+@import "plugins/fontawesome/fontawesome";
+@import "plugins/fontawesome/solid";
+@import "plugins/fontawesome/brands";
 
 /* site styling */
 @import "_mixins";
