@@ -1,7 +1,7 @@
 @extends('_layouts.master')
 @section('body')
 
-<div class="swiper-container">
+<div class="swiper">
   <div class="swiper-wrapper">
     <a class="swiper-slide" href="/work/korfbal_trainer/" aria-label="Check the Korfbal Trainer project">
       <div data-background="/assets/images/works/korfbal_trainer.webp" class="swiper-lazy">

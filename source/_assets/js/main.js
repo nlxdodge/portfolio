@@ -71,20 +71,16 @@ function setTheme(theme = "dark") {
 
   // register swiper
   const swiper = new Swiper(".swiper-container", {
+    loop: true,
+    lazy: true,
     autoplay: {
       delay: 5000,
     },
-    loop: true,
     fadeEffect: {
       crossFade: true,
     },
-    grabCursor: true,
-    preloadImages: false,
-    lazy: true,
     pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
       clickable: true,
-    },
+    }
   });
 })();
