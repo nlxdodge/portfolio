@@ -22,9 +22,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 16.x
-      - run: npm install
-      - run: npm ls
-      - run: npm run prod
+      - name: Install NPM modules
+        run: npm install
+      - name: Create production build
+        run: npm run prod
       - name: Deploy to production
         uses: sebastianpopp/ftp-action@releases/v2
         with:
