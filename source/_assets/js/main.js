@@ -70,7 +70,7 @@ function setTheme(theme = "dark") {
   Prism.highlightAll();
 
   // register swiper
-  const swiper = new Swiper(".swiper-container", {
+  const swiper = new Swiper(".swiper", {
     loop: true,
     lazy: true,
     autoplay: {
