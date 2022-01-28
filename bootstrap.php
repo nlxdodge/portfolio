@@ -15,6 +15,3 @@ use TightenCo\Jigsaw\Jigsaw;
  *     // Your code here
  * });
  */
-
-$events->afterBuild(App\Listeners\GenerateSitemap::class);
-$events->afterBuild(App\Listeners\ConvertToWebp::class);
