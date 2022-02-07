@@ -1,8 +1,8 @@
 import Prism from "prismjs";
 import Swiper, {
-  Autoplay,
-  EffectFade, Lazy, Navigation,
-  Pagination
+    Autoplay,
+    EffectFade, Lazy, Navigation,
+    Pagination
 } from "swiper";
 Swiper.use([Navigation, Pagination, Lazy, Autoplay, EffectFade]);
 
@@ -73,6 +73,7 @@ function setTheme(theme = "dark") {
   const swiper = new Swiper(".swiper", {
     loop: true,
     lazy: true,
+    loadPrevNext: true,
     autoplay: {
       delay: 5000,
     },

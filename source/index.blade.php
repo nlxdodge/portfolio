@@ -5,30 +5,26 @@
   <div class="swiper-wrapper">
     <a class="swiper-slide" href="/work/korfbal_trainer/" aria-label="Check the Korfbal Trainer project">
       <div data-background="/assets/images/works/korfbal_trainer.webp" class="swiper-lazy">
-        <div class="swiper-lazy-preloader swiper-lazy-preloader-white">
-          <p>Korfbal Trainer (Java)</p>
-        </div>
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+        <p>Korfbal Trainer (Java)</p>
       </div>
     </a>
     <a class="swiper-slide" href="/work/keydungeon/" aria-label="Check the Keydungeon project">
       <div data-background="/assets/images/works/keydungeon_c.webp" class="swiper-lazy">
-        <div class="swiper-lazy-preloader swiper-lazy-preloader-white">
-          <p>Keydungeon (PHP)</p>
-        </div>
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+        <p>Keydungeon (PHP)</p>
       </div>
     </a>
     <a class="swiper-slide" href="/work/aq3d_bot/" aria-label="Check the AQ3D project">
       <div data-background="/assets/images/works/aq3d_bot_c.webp" class="swiper-lazy">
-        <div class="swiper-lazy-preloader swiper-lazy-preloader-white">
-          <p>AQ3D Bot (Javascript)</p>
-        </div>
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+        <p>AQ3D Bot (Javascript)</p>
       </div>
     </a>
     <a class="swiper-slide" href="/work/Scrapyard/" aria-label="Check the Scrapyard project">
       <div data-background="/assets/images/works/scrapyard_c.webp" class="swiper-lazy">
-        <div class="swiper-lazy-preloader swiper-lazy-preloader-white">
-          <p>Scrapyard Mod (Java)</p>
-        </div>
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+        <p>Scrapyard Mod (Java)</p>
       </div>
     </a>
   </div>
