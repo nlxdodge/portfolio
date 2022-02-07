@@ -94,6 +94,8 @@ function setTheme(theme = "dark") {
       crossFade: true,
     },
     pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
       clickable: true,
     }
   });
