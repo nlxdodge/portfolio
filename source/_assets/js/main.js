@@ -1,10 +1,11 @@
 import Prism from "prismjs";
 import Swiper, {
-    Autoplay,
-    EffectFade, Lazy, Navigation,
-    Pagination
+  Autoplay,
+  EffectFade,
+  Lazy,
+  Pagination
 } from "swiper";
-Swiper.use([Navigation, Pagination, Lazy, Autoplay, EffectFade]);
+Swiper.use([Pagination, Lazy, Autoplay, EffectFade]);
 
 const quotes = [
   '"You\'ve got to have a sense of humor to keep your sanity." – Lance Bass',
@@ -19,10 +20,18 @@ const quotes = [
   '"I know we said goodbye, but I didn\'t know. It was forever." - Voilet Evergarden',
 ];
 
+/**
+ * Get a random object from the given array
+ * @param {Any} inputArray 
+ * @returns {Any} outputItem
+ */
 function randomFromArray(inputArray) {
   return inputArray[Math.floor(Math.random() * inputArray.length)];
 }
 
+/**
+ * Toggles the current theme state
+ */
 function toggleTheme() {
   if (localStorage.getItem("theme") === "light") {
     setTheme("dark");
@@ -31,6 +40,10 @@ function toggleTheme() {
   }
 }
 
+/**
+ * Switch the theme by saving the state to localstorage and switching a global CSS class
+ * @param {string} theme 
+ */
 function setTheme(theme = "dark") {
   if (theme == "light") {
     localStorage.setItem("theme", "light");
@@ -56,7 +69,6 @@ function setTheme(theme = "dark") {
   Array.from(quoteDiv).forEach((element) => {
     element.innerHTML = randomFromArray(quotes);
   });
-  
 
   // register toggle color button
   const buttons = document.getElementsByClassName("toggle-colors");

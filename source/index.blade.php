@@ -6,25 +6,25 @@
     <a class="swiper-slide" href="/work/korfbal_trainer/" aria-label="Check the Korfbal Trainer project">
       <div data-background="/assets/images/works/korfbal_trainer.webp" class="swiper-lazy">
         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-        <p>Korfbal Trainer (Java)</p>
+        <p>Korfbal Trainer <span>(Java)</span></p>
       </div>
     </a>
     <a class="swiper-slide" href="/work/keydungeon/" aria-label="Check the Keydungeon project">
       <div data-background="/assets/images/works/keydungeon_c.webp" class="swiper-lazy">
         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-        <p>Keydungeon (PHP)</p>
+        <p>Keydungeon <span>(PHP)</span></p>
       </div>
     </a>
     <a class="swiper-slide" href="/work/aq3d_bot/" aria-label="Check the AQ3D project">
       <div data-background="/assets/images/works/aq3d_bot_c.webp" class="swiper-lazy">
         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-        <p>AQ3D Bot (Javascript)</p>
+        <p>AQ3D Bot <span>(Javascript)</span></p>
       </div>
     </a>
     <a class="swiper-slide" href="/work/Scrapyard/" aria-label="Check the Scrapyard project">
       <div data-background="/assets/images/works/scrapyard_c.webp" class="swiper-lazy">
         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-        <p>Scrapyard Mod (Java)</p>
+        <p>Scrapyard Mod <span>(Java)</span></p>
       </div>
     </a>
   </div>

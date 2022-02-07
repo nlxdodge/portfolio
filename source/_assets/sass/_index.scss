@@ -29,23 +29,25 @@
 
       p {
         @include media(">tablet") {
-          transform: translate(-50%, -60%);
-          font-size: 2em;
+          font-size: 1.75em;
         }
 
-        z-index: 2;
         position: absolute;
         bottom: 0;
         left: 50%;
         transform: translate(-50%, -20%);
         color: #fff;
         font-size: 1.2em;
-        margin: 10px;
         text-align: center;
         font-family: $template-header-font;
 
         background-color: rgba(0, 0, 0, 0.6);
         padding: 10px 35px;
+
+        span {
+          font-family: $template-default-font;
+          font-size: 1.25em;
+        }
       }
     }
   }
