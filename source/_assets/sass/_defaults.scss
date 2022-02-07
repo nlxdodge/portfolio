@@ -78,9 +78,10 @@ article {
   font-size: 1em;
   color: $template-color;
   text-decoration: none;
-  padding: 14px 24px;
   transition: all 0.2s ease-in-out;
   border-radius: 7px;
+  width: 100%;
+  margin-bottom: 10px;
 
   i {
     font-size: 1.2em;
@@ -90,6 +91,12 @@ article {
   &:hover {
     color: $template-color;
     background-color: $template-color-accent-opposing;
+  }
+
+  @include media(">=tablet") {
+    padding: 14px 24px;
+    width: auto;
+    margin: auto;
   }
 }
 
