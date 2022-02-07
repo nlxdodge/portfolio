@@ -84,8 +84,9 @@ function setTheme(theme = "dark") {
   // register swiper
   const swiper = new Swiper(".swiper", {
     loop: true,
-    lazy: true,
-    loadPrevNext: true,
+    lazy: {
+      loadPrevNext: true
+    },
     autoplay: {
       delay: 5000,
     },
