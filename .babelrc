@@ -5,11 +5,15 @@
       {
         "languages": [
           "javascript",
+          "css",
           "scss",
           "python",
           "ruby",
           "java",
-          "sql"
+          "sql",
+          "yaml",
+          "html",
+          "json"
         ],
         "plugins": [],
         "theme": "okaidia",

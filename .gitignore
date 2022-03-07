@@ -5,11 +5,12 @@
 /.vscode/
 npm-debug.log
 yarn-error.log
-sonar-project.properties
 
-# ignore local and staging builds
+# ignore all builds
 /build_local/
 /build_staging/
+/build_production/
 
 # ignore local sonarscanner caching
 .scannerwork
+sonar-project.properties
