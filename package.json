@@ -18,7 +18,7 @@
         "babel-plugin-prismjs": "^2.1.0",
         "include-media": "^1.4.10",
         "normalize.css": "^8.0.1",
-        "prismjs": "^1.26.0",
+        "prismjs": "^1.27.0",
         "swiper": "^7.4.1"
     }
 }
