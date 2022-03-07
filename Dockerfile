@@ -1,14 +1,15 @@
-FROM composer:latest
+# not latest because that uses PHP 8.1 and Jisaw doesn't have support for that
+FROM composer:2.2.0
 
-# install dependencies
-RUN apk add imagemagick nodejs npm --no-progress
+RUN apk add imagemagick nodejs npm
 COPY package*.json ./
-RUN composer require tightenco/jigsaw --no-progress
-RUN npm install -g nodemon --no-progress && npm install --no-progress
+RUN npm install
 
-# add code
+# add source code (no node_modules because of the .dockerignore file)
 COPY . .
 
+# require jigsaw only after copy of the code so it can do the bootstrapping
+RUN composer require tightenco/jigsaw
+
 # run local for development
-EXPOSE 3000
 CMD ["npm", "run", "watch"]

@@ -2,7 +2,7 @@
 
 This website is made with [Jigsaw](https://jigsaw.tighten.co/). For installation instructions see [Installation](https://jigsaw.tighten.co/docs/installation/).
 
-### Basic rundown for this project
+## Basic rundown for this project
 
 Clone the project, run `npm install` and serve it by runnning `npm run watch`
 

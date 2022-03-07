@@ -16,7 +16,11 @@ class ConvertToWebp
                 $extension = pathinfo($path, PATHINFO_EXTENSION);
                 $source = $root . '/build_' . $jigsaw->getEnvironment() . $path;
                 $destination = $root . '/build_' . $jigsaw->getEnvironment() . str_replace('.' . $extension, '', $path) . '.webp';
-                WebPConvert::convert($source, $destination);
+                WebPConvert::convert($source, $destination, [
+                    'converters' => [
+                        'imagemagick'
+                    ],
+                ]);
             }
         });
     }

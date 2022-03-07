@@ -1,8 +1,9 @@
 version: "3.9"
 services:
   web:
-    container_name: portfolio
+    container_name: portfolio_small
     build: .
-    command: npm run watch
     ports:
       - 3000:3000
+    volumes:
+       - ./source:/usr/app/source
