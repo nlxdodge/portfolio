@@ -3,6 +3,9 @@
 <article class="post">
   <h1>{{ $page->title }}</h1>
   <p class="italic">Writen by: {{ $page->author }} - Last update: {{ date('j F Y', $page->date) }}</p>
+  @if ($page->old())
+  <div class="old-content">⚠️ This has been made a while ago, things might have changed sinds I wrote this ⚠️</div>
+  @endif
   @yield('content')
   <div class="center-text margin-top-50">
     <a class="button" href="/posts" aria-label="All posts"><i aria-hidden="true" class="fas fa-chevron-circle-left"></i> All posts</a>

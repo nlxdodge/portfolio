@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Str;
+use Illuminate\Support\Carbon;
 
 return [
     'production' => false,
@@ -23,4 +24,9 @@ return [
     'selected' => function ($page, $section) {
         return Str::contains($page->getPath(), $section) ? 'selected' : '';
     },
+    'old' => function ($page) {
+        $now = Carbon::now()->subYear();
+        $lastModified = new Carbon($page->date);
+        return $now->greaterThan($lastModified);
+    }
 ];
