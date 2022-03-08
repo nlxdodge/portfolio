@@ -11,12 +11,9 @@ jobs:
     name: Build and Deploy
     steps:
       - name: Checkout Code
-        uses: actions/checkout@master
-      - name: Install Imagemagick for webp conversion
-        run: sudo apt install imagemagick
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
       - name: Install Composer Dependencies
-        run: composer install --no-interaction
+        run: composer require tightenco/jigsaw --no-interaction --no-progress
       - name: Install NPM Dependencies
         run: npm install
       - name: Build Production
