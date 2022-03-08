@@ -16,7 +16,7 @@ jobs:
         run: sudo apt install imagemagick
       - uses: actions/checkout@v2
       - name: Install Composer Dependencies
-        run: composer install --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
+        run: composer install --no-interaction
       - name: Install NPM Dependencies
         run: npm install
       - name: Build Production
