@@ -12,21 +12,16 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@master
-      - name: Install Imagemagick
+      - name: Install Imagemagick for webp conversion
         run: sudo apt install imagemagick
-      - name: Install composer
-        uses: php-actions/composer@v2
-        with:
-          command: require tightenco/jigsaw
-      - name: Setup Node version 16
-        uses: actions/setup-node@v1
-        with:
-          node-version: 16.x
-      - name: Install NPM modules
+      - uses: actions/checkout@v2
+      - name: Install Composer Dependencies
+        run: composer install --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
+      - name: Install NPM Dependencies
         run: npm install
-      - name: Create production build
+      - name: Build Production
         run: npm run prod
-      - name: Deploy to production
+      - name: Deploy to Production
         uses: sebastianpopp/ftp-action@releases/v2
         with:
           host: ${{ secrets.FTP_DOMAIN }}
