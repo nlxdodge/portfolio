@@ -11,11 +11,11 @@ class ConvertToWebp
     public function handle(Jigsaw $jigsaw)
     {
         collect($jigsaw->getOutputPaths())->each(function ($path) use(&$jigsaw) {
-            if ($this->isAsset($path) && $this->isImage($path)) {
-                $root = dirname(__DIR__);
-                $extension = pathinfo($path, PATHINFO_EXTENSION);
-                $source = $root . '/build_' . $jigsaw->getEnvironment() . $path;
-                $destination = $root . '/build_' . $jigsaw->getEnvironment() . str_replace('.' . $extension, '', $path) . '.webp';
+            $root = dirname(__DIR__);
+            $extension = pathinfo($path, PATHINFO_EXTENSION);
+            $source = $root . '/build_' . $jigsaw->getEnvironment() . $path;
+            $destination = $root . '/build_' . $jigsaw->getEnvironment() . str_replace('.' . $extension, '', $path) . '.webp';
+            if ($this->canConvertToWebp($path) && !file_exists($destination)) {
                 WebPConvert::convert($source, $destination, [
                     'converters' => [
                         'imagemagick'
@@ -25,12 +25,7 @@ class ConvertToWebp
         });
     }
 
-    public function isAsset($path)
-    {
-        return str_contains($path, "/assets/images/");
-    }
-
-    public function isImage($path)
+    public function canConvertToWebp($path)
     {
         $extension = pathinfo($path, PATHINFO_EXTENSION);
         $types = ['png', 'jpg', 'jpeg'];

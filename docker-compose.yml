@@ -6,4 +6,5 @@ services:
     ports:
       - 3000:3000
     volumes:
-       - ./source:/usr/app/source
+       - ./source:/app/source
+       - ./build_local/assets:/app/build_local/assets

@@ -6970,6 +6970,13 @@ article img {
   transform: scale(1.3, 1.3);
 }
 
+.old-content {
+  background-color: var(--template-color-accent);
+  padding: 15px;
+  text-align: center;
+  border-radius: 0.3em;
+}
+
 .fas {
   font-family: "FontAwesome", Helvetica, Arial, sans-serif;
 }
