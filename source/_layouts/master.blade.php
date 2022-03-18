@@ -28,8 +28,21 @@
     <meta name="theme-color" content="#202020">
 
     <!-- scripts and styles -->
-    <style>{{ inline(mix('css/main.css', 'assets/build')) }}</style>
+    <link rel="preload" href="assets/fonts/fontawesome/fa-brand-400.woff2" as="font" type="font/woff2" crossorigin>   
+    <link rel="preload" href="assets/fonts/fontawesome/fa-brand-400.woff" as="font" type="font/woff" crossorigin>    
+    <link rel="preload" href="assets/fonts/fontawesome/fa-brand-400.svg" as="font" type="font/svg" crossorigin>   
+    <link rel="preload" href="assets/fonts/fontawesome/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>   
+    <link rel="preload" href="assets/fonts/fontawesome/fa-regular-400.woff" as="font" type="font/woff" crossorigin>    
+    <link rel="preload" href="assets/fonts/fontawesome/fa-regular-400.svg" as="font" type="font/svg" crossorigin>
+    <link rel="preload" href="assets/fonts/fontawesome/fa-solid-400.woff2" as="font" type="font/woff2" crossorigin>   
+    <link rel="preload" href="assets/fonts/fontawesome/fa-solid-400.woff" as="font" type="font/woff" crossorigin>    
+    <link rel="preload" href="assets/fonts/fontawesome/fa-solid-400.svg" as="font" type="font/svg" crossorigin>
+    <link rel="preload" href="assets/fonts/Montserrat-Black.woff2" as="font" type="font/woff2" crossorigin>   
+    <link rel="preload" href="assets/fonts/Montserrat-Black.woff" as="font" type="font/woff" crossorigin>   
+    <link rel="preload" href="assets/fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin>   
+    <link rel="preload" href="assets/fonts/OpenSans-Light.woff" as="font" type="font/woff" crossorigin>   
     <script defer type="text/javascript" src="{{ mix('js/main.js', 'assets/build') }}"></script>
+    <style>{{ inline(mix('css/main.css', 'assets/build')) }}</style>
 </head>
 
 <body>

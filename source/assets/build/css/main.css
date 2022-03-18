@@ -6815,8 +6815,7 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url("/assets/fonts/fontawesome/fa-solid-900.eot");
-  src: url("/assets/fonts/fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/fontawesome/fa-solid-900.woff2") format("woff2"), url("/assets/fonts/fontawesome/fa-solid-900.woff") format("woff"), url("/assets/fonts/fontawesome/fa-solid-900.ttf") format("truetype"), url("/assets/fonts/fontawesome/fa-solid-900.svg#fontawesome") format("svg");
+  src: url("/assets/fonts/fontawesome/fa-solid-900.woff2") format("woff2"), url("/assets/fonts/fontawesome/fa-solid-900.woff") format("woff"), url("/assets/fonts/fontawesome/fa-solid-900.svg#fontawesome") format("svg");
 }
 .fa,
 .fas {
@@ -6833,8 +6832,7 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("/assets/fonts/fontawesome/fa-brands-400.eot");
-  src: url("/assets/fonts/fontawesome/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/fontawesome/fa-brands-400.woff2") format("woff2"), url("/assets/fonts/fontawesome/fa-brands-400.woff") format("woff"), url("/assets/fonts/fontawesome/fa-brands-400.ttf") format("truetype"), url("/assets/fonts/fontawesome/fa-brands-400.svg#fontawesome") format("svg");
+  src: url("/assets/fonts/fontawesome/fa-brands-400.woff2") format("woff2"), url("/assets/fonts/fontawesome/fa-brands-400.woff") format("woff"), url("/assets/fonts/fontawesome/fa-brands-400.svg#fontawesome") format("svg");
 }
 .fab {
   font-family: "Font Awesome 5 Brands";
@@ -6977,34 +6975,16 @@ article img {
   border-radius: 0.3em;
 }
 
-.fas {
-  font-family: "FontAwesome", Helvetica, Arial, sans-serif;
-}
-
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat Black"), local("Montserrat-Black"), url("/assets/fonts/Montserrat-Black.woff2") format("woff2"), url("/assets/fonts/Montserrat-Black.woff") format("woff"), url("/assets/fonts/Montserrat-Black.ttf") format("truetype");
+  src: local("Montserrat Black"), local("Montserrat-Black"), url("/assets/fonts/Montserrat-Black.woff2") format("woff2"), url("/assets/fonts/Montserrat-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
-  src: local("Open Sans Light Italic"), local("OpenSans-LightItalic"), url("/assets/fonts/OpenSans-LightItalic.woff2") format("woff2"), url("/assets/fonts/OpenSans-LightItalic.woff") format("woff");
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Open Sans";
   src: local("Open Sans Light"), local("OpenSans-Light"), url("/assets/fonts/OpenSans-Light.woff2") format("woff2"), url("/assets/fonts/OpenSans-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "FontAwesome";
-  src: local("FontAwesome"), local("FontAwesome"), url("/assets/fonts/fontawesome/fa-solid-900.woff") format("woff"), url("/assets/fonts/fontawesome/fa-solid-900.woff") format("woff"), url("/assets/fonts/fontawesome/fa-solid-900.ttf") format("ttf"), url("/assets/fonts/fontawesome/fa-solid-900.svg") format("svg"), url("/assets/fonts/fontawesome/fa-solid-900.eot") format("eot");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
