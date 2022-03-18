@@ -21,7 +21,7 @@
         <p>AQ3D Bot <span>(Javascript)</span></p>
       </div>
     </a>
-    <a class="swiper-slide" href="/work/Scrapyard/" aria-label="Check the Scrapyard project">
+    <a class="swiper-slide" href="/work/scrapyard/" aria-label="Check the Scrapyard project">
       <div data-background="/assets/images/works/scrapyard_c.webp" class="swiper-lazy">
         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
         <p>Scrapyard Mod <span>(Java)</span></p>

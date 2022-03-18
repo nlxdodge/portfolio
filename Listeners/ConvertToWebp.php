@@ -11,7 +11,7 @@ class ConvertToWebp
     public function handle(Jigsaw $jigsaw)
     {
         collect($jigsaw->getOutputPaths())->each(function ($path) use(&$jigsaw) {
-            if ($this->rightPath($path) && $this->isImage($path)) {
+            if ($this->isAsset($path) && $this->isImage($path)) {
                 $root = dirname(__DIR__);
                 $extension = pathinfo($path, PATHINFO_EXTENSION);
                 $source = $root . '/build_' . $jigsaw->getEnvironment() . $path;
@@ -25,7 +25,7 @@ class ConvertToWebp
         });
     }
 
-    public function rightPath($path)
+    public function isAsset($path)
     {
         return str_contains($path, "/assets/images/");
     }
