@@ -28,10 +28,10 @@
     <meta name="theme-color" content="#202020">
 
     <!-- scripts and styles -->
-    <link rel="preload" href="assets/fonts/fontawesome/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>   
-    <link rel="preload" href="assets/fonts/fontawesome/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>   
-    <link rel="preload" href="assets/fonts/Montserrat-Black.woff2" as="font" type="font/woff2" crossorigin>   
-    <link rel="preload" href="assets/fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin>   
+    <link rel="preload" href="/assets/fonts/fontawesome/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>   
+    <link rel="preload" href="/assets/fonts/fontawesome/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>   
+    <link rel="preload" href="/assets/fonts/Montserrat-Black.woff2" as="font" type="font/woff2" crossorigin>   
+    <link rel="preload" href="/assets/fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin>   
 
     <script defer type="text/javascript" src="{{ mix('js/main.js', 'assets/build') }}"></script>
     <style>{{ inline(mix('css/main.css', 'assets/build')) }}</style>
