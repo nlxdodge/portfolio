@@ -46,6 +46,6 @@
     </div>
     @include('_partials.footer')
 </body>
-<script async type="text/javascript" src="{{ mix('js/main.js', 'assets/build') }}"></script>
-<script async type="text/javascript" src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js"></script>
+<script defer type="text/javascript" src="{{ mix('js/main.js', 'assets/build') }}"></script>
+<script defer type="text/javascript" src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" referrerpolicy="no-referrer"></script>
 </html>
