@@ -1,11 +1,7 @@
 /* Plugin SCSS */
 @import "~normalize.css/normalize";
 @import "~include-media/dist/_include-media";
-@import "~swiper/scss";
-@import "~swiper/scss/autoplay";
-@import "~swiper/scss/effect-fade";
-@import "~swiper/scss/lazy";
-@import "~swiper/scss/pagination";
+@import "~@glidejs/glide/src/assets/sass/glide.core";
 @import "plugins/fontawesome/fontawesome";
 @import "plugins/fontawesome/solid";
 @import "plugins/fontawesome/brands";

@@ -1,11 +1,5 @@
+import Glide from '@glidejs/glide';
 import Prism from "prismjs";
-import Swiper, {
-  Autoplay,
-  EffectFade,
-  Lazy,
-  Pagination
-} from "swiper";
-Swiper.use([Pagination, Lazy, Autoplay, EffectFade]);
 
 const quotes = [
   '"You\'ve got to have a sense of humor to keep your sanity." – Lance Bass',
@@ -81,22 +75,11 @@ function setTheme(theme = "dark") {
   // highlight all code
   Prism.highlightAll();
 
-  // register swiper
-  const swiper = new Swiper(".swiper", {
-    loop: true,
-    lazy: {
-      loadPrevNext: true
-    },
-    autoplay: {
-      delay: 5000,
-    },
-    fadeEffect: {
-      crossFade: true,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true,
-    }
-  });
+  // register glider
+  new Glide('.glide', {
+    type: 'carousel',
+    perView: 1,
+    autoplay: 5000,
+    hoverpause: true
+  }).mount()
 })();

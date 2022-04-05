@@ -1,34 +1,41 @@
 @extends('_layouts.master')
 @section('body')
 
-<div class="swiper">
-  <div class="swiper-wrapper">
-    <a class="swiper-slide" href="/work/korfbal_trainer/" aria-label="Check the Korfbal Trainer project">
-      <div data-background="/assets/images/works/korfbal_trainer.webp" class="swiper-lazy">
-        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-        <p>Korfbal Trainer <span>(Javascript)</span></p>
-      </div>
-    </a>
-    <a class="swiper-slide" href="/work/keydungeon/" aria-label="Check the Keydungeon project">
-      <div data-background="/assets/images/works/keydungeon_c.webp" class="swiper-lazy">
-        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-        <p>Keydungeon <span>(PHP)</span></p>
-      </div>
-    </a>
-    <a class="swiper-slide" href="/work/aq3d_bot/" aria-label="Check the AQ3D Bot project">
-      <div data-background="/assets/images/works/aq3d_bot_c.webp" class="swiper-lazy">
-        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-        <p>AQ3D Bot <span>(Java)</span></p>
-      </div>
-    </a>
-    <a class="swiper-slide" href="/work/scrapyard/" aria-label="Check the Scrapyard Mod project">
-      <div data-background="/assets/images/works/scrapyard_c.webp" class="swiper-lazy">
-        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-        <p>Scrapyard Mod <span>(Java)</span></p>
-      </div>
-    </a>
+<div class="glide">
+  <div data-glide-el="track" class="glide__track">
+    <ul class="glide__slides">
+      <li class="glide__slide">
+        <a href="/work/korfbal_trainer/" aria-label="Check the Korfbal Trainer project">
+          <img src="/assets/images/works/korfbal_trainer.webp" alt="Korfbal Trainer" />
+          <p>Korfbal Trainer <span>(Javascript)</span></p>
+        </a>
+      </li>
+      <li class="glide__slide">
+        <a href="/work/keydungeon/" aria-label="Check the Keydungeon project">
+          <img src="/assets/images/works/keydungeon_c.webp" alt="Keydungeon" />
+          <p>Keydungeon <span>(PHP)</span></p>
+        </a>
+      </li>
+      <li class="glide__slide">
+        <a href="/work/aq3d_bot/" aria-label="Check the AQ3D Bot project">
+          <img src="/assets/images/works/aq3d_bot_c.webp" alt="AQ3D Bot" />
+          <p>AQ3D Bot <span>(Java)</span></p>
+        </a>
+      </li>
+      <li class="glide__slide">
+        <a class="swiper-slide" href="/work/scrapyard/" aria-label="Check the Scrapyard Mod project">
+          <img src="/assets/images/works/scrapyard_c.webp" alt="Scrapyard Mod">
+          <p>Scrapyard Mod <span>(Java)</span></p>
+        </a>
+      </li>
+    </ul>
   </div>
-  <div class="swiper-pagination"></div>
+  <div class="glide__bullets" data-glide-el="controls[nav]">
+    <div class="glide__bullet" data-glide-dir="=0"></div>
+    <div class="glide__bullet" data-glide-dir="=1"></div>
+    <div class="glide__bullet" data-glide-dir="=2"></div>
+    <div class="glide__bullet" data-glide-dir="=3"></div>
+  </div>
 </div>
 
 <div>
