@@ -12,19 +12,19 @@
       </li>
       <li class="glide__slide">
         <a href="/work/keydungeon/" aria-label="Check the Keydungeon project">
-          <img src="/assets/images/works/keydungeon_c.webp" alt="Keydungeon" />
+          <img src="/assets/images/works/keydungeon_c.webp" alt="Keydungeon" loading="lazy" />
           <p>Keydungeon <span>(PHP)</span></p>
         </a>
       </li>
       <li class="glide__slide">
         <a href="/work/aq3d_bot/" aria-label="Check the AQ3D Bot project">
-          <img src="/assets/images/works/aq3d_bot_c.webp" alt="AQ3D Bot" />
+          <img src="/assets/images/works/aq3d_bot_c.webp" alt="AQ3D Bot" loading="lazy" />
           <p>AQ3D Bot <span>(Java)</span></p>
         </a>
       </li>
       <li class="glide__slide">
         <a class="swiper-slide" href="/work/scrapyard/" aria-label="Check the Scrapyard Mod project">
-          <img src="/assets/images/works/scrapyard_c.webp" alt="Scrapyard Mod">
+          <img src="/assets/images/works/scrapyard_c.webp" alt="Scrapyard Mod" loading="lazy" />
           <p>Scrapyard Mod <span>(Java)</span></p>
         </a>
       </li>
