@@ -34,7 +34,6 @@
     <link rel="preload" href="/assets/fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin>   
     
     <!-- scripts and styles -->
-    <script defer type="text/javascript" src="{{ mix('js/main.js', 'assets/build') }}"></script>
     <style>{{ inline(mix('css/main.css', 'assets/build')) }}</style>
 </head>
 
@@ -47,5 +46,5 @@
     </div>
     @include('_partials.footer')
 </body>
-
+<script defer type="text/javascript" src="{{ mix('js/main.js', 'assets/build') }}"></script>
 </html>
