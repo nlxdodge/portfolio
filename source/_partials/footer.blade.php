@@ -11,6 +11,5 @@
             <i aria-hidden="true" aria-label="Copyright" class="fas fa-copyright"></i> Gerben Veenhof | {{ date("Y") }} | Made with <a class="jigsaw-link" href="https://jigsaw.tighten.co/" aria-label="Heart">Jigsaw <i aria-hidden="true" class="fas fa-heart"></i></a>
         </p>
         <div id="wcb" class="carbonbadge wcb-d"></div>
-        <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
     </div>
 </footer>
