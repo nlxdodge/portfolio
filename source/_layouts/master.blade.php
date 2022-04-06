@@ -40,8 +40,8 @@
 <body>
     @include('_partials.header')
     <div class="container">
-        <noscript>🚧 Some element of my website will not be working without javascript (Like the switch to light/dark mode, image slider and error page).
-            But most of it is still readable, so enjoy! 🚧</noscript>
+        <noscript class="notification-strip">🚧 While my website fully works without javascript, I only use it for switching themes, quotes, 
+            highlighting of code and the image slider on the homepage, so enjoy! 🚧</noscript>
         @yield('body')
     </div>
     @include('_partials.footer')
