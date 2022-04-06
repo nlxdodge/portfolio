@@ -1,6 +1,8 @@
 # not latest because that uses PHP 8.1 and Jisaw doesn't have support for that
 FROM composer:2.2.0
 
+WORKDIR /app
+
 RUN apk add imagemagick nodejs npm
 COPY package*.json ./
 RUN npm install
@@ -12,4 +14,4 @@ COPY . .
 RUN composer require tightenco/jigsaw
 
 # run local for development
-CMD ["npm", "run", "watch"]
+CMD ["npm", "run", "watch-poll"]
