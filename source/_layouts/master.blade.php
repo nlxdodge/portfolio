@@ -33,8 +33,8 @@
     <link rel="preload" href="/assets/fonts/Montserrat-Black.woff2" as="font" type="font/woff2" crossorigin>   
     <link rel="preload" href="/assets/fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin>   
     
-    <!-- scripts and styles -->
-    <style>{{ inline(mix('css/main.css', 'assets/build')) }}</style>
+    <!-- styles -->
+    <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 </head>
 
 <body>
@@ -46,6 +46,7 @@
     </div>
     @include('_partials.footer')
 </body>
+<!-- scripts -->
 <script defer type="text/javascript" src="{{ mix('js/main.js', 'assets/build') }}"></script>
 <script defer type="text/javascript" src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" referrerpolicy="no-referrer"></script>
 </html>
