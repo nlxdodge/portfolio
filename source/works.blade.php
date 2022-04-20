@@ -4,7 +4,7 @@
 <div class="work-container">
 @foreach ($works as $work)
     <a class="work-block" href="{{ $work->getUrl() }}">
-        <img src="{{ $work->header_image }}" alt="{{ $work->title }}" />
+        <img src="{{ $work->header_image }}" alt="{{ $work->title }}" loading="lazy" />
         <div class="work-title">
             {{ $work->title }}
             @if ($work->category)
