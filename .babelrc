@@ -12,10 +12,9 @@
           "java",
           "sql",
           "yaml",
-          "html",
           "json"
         ],
-        "plugins": [],
+        "plugins": ["show-language"],
         "theme": "okaidia",
         "css": true
       }

@@ -1,6 +1,8 @@
 import Glide from '@glidejs/glide';
 import Prism from "prismjs";
 
+Prism.manual = true;
+
 const quotes = [
   '"You\'ve got to have a sense of humor to keep your sanity." – Lance Bass',
   '"Stand on the shoulders of giants." - Bernard of Chartres',
@@ -72,9 +74,6 @@ function setTheme(theme = "dark") {
     });
   });
 
-  // highlight all code
-  Prism.highlightAll();
-
   // register glider
   new Glide('.glide', {
     type: 'carousel',
@@ -82,4 +81,7 @@ function setTheme(theme = "dark") {
     autoplay: 5000,
     hoverpause: true
   }).mount()
+
+  // highlight all code
+  Prism.highlightAll();
 })();
