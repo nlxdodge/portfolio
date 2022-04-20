@@ -34,7 +34,7 @@
     <link rel="preload" href="/assets/fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin>   
     
     <!-- styles -->
-    <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
+    <style>{{ inline(mix('css/main.css', 'assets/build')) }}</style>
 </head>
 
 <body>
