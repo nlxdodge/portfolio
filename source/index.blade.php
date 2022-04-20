@@ -1,6 +1,11 @@
 @extends('_layouts.master')
 @section('body')
 
+<div>
+  <h1>Backend redefined</h1>
+  <p>Welcome to my humble site, you can find all sorts of informational posts and my proud works. While also giving a sneak peek for you to try it out yourselves.</p>
+</div>
+
 <div class="glide">
   <div data-glide-el="track" class="glide__track">
     <ul class="glide__slides">
@@ -39,8 +44,6 @@
 </div>
 
 <div>
-  <h1>Backend redefined</h1>
-  <p>Welcome to my humble site, you can find all sorts of informational posts and my proud works. While also giving a sneak peek for you to try it out yourselves.</p>
   <h2>How it al started</h2>
   <p>I Started of my career with interests in computer science at a very young age. And took that to school where I choose to be an aspiring game developer. But soon
     found out that making games was almost the same as writing code for websites or other applications. Hence, I started to learn a new and higher degree for application
