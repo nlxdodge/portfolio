@@ -26,12 +26,6 @@
     <meta name="msapplication-TileColor" content="#202020">
     <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
     <meta name="theme-color" content="#202020">
-
-    <!-- preload needed fonts -->
-    <link rel="preload" href="/assets/fonts/fontawesome/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>   
-    <link rel="preload" href="/assets/fonts/fontawesome/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>   
-    <link rel="preload" href="/assets/fonts/Montserrat-Black.woff2" as="font" type="font/woff2" crossorigin>   
-    <link rel="preload" href="/assets/fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin>   
     
     <!-- styles -->
     <style>{{ inline(mix('css/main.css', 'assets/build')) }}</style>
