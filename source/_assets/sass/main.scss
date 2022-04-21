@@ -2,9 +2,9 @@
 @import "~normalize.css/normalize";
 @import "~include-media/dist/_include-media";
 @import "~@glidejs/glide/src/assets/sass/glide.core";
-// @import "plugins/fontawesome/fontawesome";
-// @import "plugins/fontawesome/solid";
-// @import "plugins/fontawesome/brands";
+@import "plugins/fontawesome/fontawesome";
+@import "plugins/fontawesome/solid";
+@import "plugins/fontawesome/brands";
 
 /* Site SCSS */
 @import "_mixins";
