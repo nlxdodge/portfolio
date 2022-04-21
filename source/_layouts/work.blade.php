@@ -7,10 +7,10 @@
   <div class="center-text margin-top-50">
     <a class="button" href="/works" aria-label="All works"><i aria-hidden="true" class="fas fa-chevron-circle-left"></i> All works</a>
     @if ($page->link)
-      <a class="button" href="{{ $page->link }}" aria-label="Link"><i aria-hidden="true" class="fas fa-link"></i> Link</a>
+      <a class="button" href="{{ $page->link }}" target="_blank" aria-label="Link"><i aria-hidden="true" class="fas fa-link"></i> Link</a>
     @endif
     @if ($page->code)
-      <a class="button" href="{{ $page->code }}" aria-label="Code"><i aria-hidden="true" class="fas fa-code"></i> Code</a>
+      <a class="button" href="{{ $page->code }}" target="_blank" aria-label="Code"><i aria-hidden="true" class="fas fa-code"></i> Code</a>
     @endif
   </div>
 </article>

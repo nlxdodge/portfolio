@@ -10,7 +10,7 @@
   <div class="center-text margin-top-50">
     <a class="button" href="/posts" aria-label="All posts"><i aria-hidden="true" class="fas fa-chevron-circle-left"></i> All posts</a>
     @if ($page->link)
-      <a class="button" href="{{ $page->link }}" aria-label="Link"><i aria-hidden="true" class="fas fa-link"></i> Link</a>
+      <a class="button" href="{{ $page->link }}" target="_blank" aria-label="Link"><i aria-hidden="true" class="fas fa-link"></i> Link</a>
     @endif
   </div>
 </article>
