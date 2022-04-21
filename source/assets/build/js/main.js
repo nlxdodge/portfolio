@@ -3992,12 +3992,17 @@ function setTheme() {
     });
   }); // register glider
 
-  new _glidejs_glide__WEBPACK_IMPORTED_MODULE_0__["default"]('.glide', {
-    type: 'carousel',
-    perView: 1,
-    autoplay: 5000,
-    hoverpause: true
-  }).mount(); // highlight all code
+  var found = document.getElementsByClassName(".glide");
+
+  if (found.length == 1) {
+    new _glidejs_glide__WEBPACK_IMPORTED_MODULE_0__["default"]('.glide', {
+      type: 'carousel',
+      perView: 1,
+      autoplay: 5000,
+      hoverpause: true
+    }).mount();
+  } // highlight all code
+
 
   prismjs_components_prism_core__WEBPACK_IMPORTED_MODULE_1___default().highlightAll();
 })();

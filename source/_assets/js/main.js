@@ -75,12 +75,15 @@ function setTheme(theme = "dark") {
   });
 
   // register glider
-  new Glide('.glide', {
-    type: 'carousel',
-    perView: 1,
-    autoplay: 5000,
-    hoverpause: true
-  }).mount()
+  const found = document.getElementsByClassName(".glide");
+  if(found.length == 1) {
+    new Glide('.glide', {
+      type: 'carousel',
+      perView: 1,
+      autoplay: 5000,
+      hoverpause: true
+    }).mount()
+  }
 
   // highlight all code
   Prism.highlightAll();
