@@ -75,7 +75,7 @@ function setTheme(theme = "dark") {
   });
 
   // register glider
-  const found = document.getElementsByClassName(".glide");
+  const found = document.getElementsByClassName("glide");
   if(found.length == 1) {
     new Glide('.glide', {
       type: 'carousel',
