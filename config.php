@@ -25,7 +25,7 @@ return [
         return Str::contains($page->getPath(), $section) ? 'selected' : '';
     },
     'old' => function ($page) {
-        $now = Carbon::now()->subYear();
+        $now = Carbon::now()->subYear(2);
         $lastModified = new Carbon($page->date);
         return $now->greaterThan($lastModified);
     }
