@@ -3992,7 +3992,7 @@ function setTheme() {
     });
   }); // register glider
 
-  var found = document.getElementsByClassName(".glide");
+  var found = document.getElementsByClassName("glide");
 
   if (found.length == 1) {
     new _glidejs_glide__WEBPACK_IMPORTED_MODULE_0__["default"]('.glide', {

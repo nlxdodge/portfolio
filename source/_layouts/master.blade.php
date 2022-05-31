@@ -39,8 +39,8 @@
         @yield('body')
     </div>
     @include('_partials.footer')
+    <!-- scripts -->
+    <script defer type="text/javascript" src="{{ mix('js/main.js', 'assets/build') }}"></script>
+    <script defer type="text/javascript" src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" referrerpolicy="no-referrer"></script>
 </body>
-<!-- scripts -->
-<script defer type="text/javascript" src="{{ mix('js/main.js', 'assets/build') }}"></script>
-<script defer type="text/javascript" src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" referrerpolicy="no-referrer"></script>
 </html>

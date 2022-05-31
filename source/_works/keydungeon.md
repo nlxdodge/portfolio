@@ -12,14 +12,13 @@ code:
 
 Keydungeon was one of my first finished projects, it's a password manager that I wrote myself. So it's not as secure as possible. But I wanted to give it a try anyways.
 
-This project was also made in the second year of internship I have ever done at an IT-company. And the language and implementation shows is age. Because it was written in PHP and SCSS.
+This project was made in the second year of internship I have ever done at an IT-company and the implementation shows is age. Mainly because I didn't use any components and wrote everything myself.
 
-While SCSS/SASS is somewhat old now. It was already in the time I used it for my internship. However, the company just switched to using SCSS. So I got to learn it as well. Which was quite the experience, programming in CSS.
+While you could argue if PHP is a good language or not fully depends on what value you can give it. For me at the time it worked great, I had the knowledge to make something from scratch with some additional help from the internet.
 
-Here is a short example of the code I have written in SCSS (Most people that used SCSS would already know what I did here, but I'ill explain it anyways).
+Before I ever wrote a lot of CSS I would never have though to use variables. So the company I worked for in the time switch to SCSS instead. There I learned how to write and use SCSS, but also apply it in my own projects.
 
-First I have split most of the CSS in smaller components, such as fonts in this example.
-
+With this small example you can already see some usefull things in SCSS.
 ```scss
 @import "_font.scss";
 
@@ -30,8 +29,11 @@ $template-color: #F1C40F;
 
 I also added variables for the main colors of the website, so the light, dark and orange colors can be changed on one location for the whole application. Which saves time and errors.
 
-## Increase in price
+## 💶 Increase in price
 
-My host [Cloudbear](https://cloudbear.nl) thought that increasing the price from €0.50 to €7.50 a month was needed. But that is a price increase of 1400%. That's bonkers, going from €6,- a year to €90,- is just too much. That made me take action immediately, I started looking for a cheap alternative for PHP hosting. I did found another host which had the same price, but no e-mail or added domain.
+My host [Cloudbear](https://cloudbear.nl) wanted to switch it customer base around, they way they where doing that was somewhat controversial as well. The previous price I had to pay was €0.50 a month. The new to pay price was going to be €7.50 a  a month... That is a price increase of 1400%! So by going from €6,- a year to €90,- a year made me take action immediately, I started looking for other alternatives in PHP hosting. I did found another host called [Vimmexx](https://www.vimexx.nl/) which in my opinion is still good for the price. Vimexx also puts heavy restrictions up on users, for example: 25GB of traffic a month. 
 
-So I choose to create another Vue app and connect everything in the back-end with IBM. As IBM is the only one that doesn't require a credit card when signing up for their services. I do have time till next year before they will increase the price. So I am also currently working on revising this project.
+But for a portfolio of keydungeon it doesn't really matter to much, as I don't upload to many images and code or docker/program builds should be on Github anyways.
+
+## 🔨 Upgrades
+I do plan to upgrade Keydungeon, but it's on the bottom of the list. So planning to make a new PHP API and a vue 3 front-end for starters.
