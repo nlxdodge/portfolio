@@ -4,12 +4,12 @@ title: C.A.T.E Discord Bot
 author: Gerben Veenhof
 date: 2020-11-26
 section: content
-header_image: /assets/images/works/aq3d_bot_c.webp
+header_image: /assets/images/works/aq3d_bot
 category: Java
 link: https://github.com/nlxdodge/C.A.T.E
 ---
 
-![Discord Bot](/assets/images/works/aq3d_bot_c.webp)
+![Discord Bot](/assets/images/works/aq3d_bot.webp)
 
 [AQ3D](https://aq3d.com/) is the latest game from [Artix Entertainment](https://www.artix.com/).
 I was playing the game and also switching between a lot of different servers for some area's in the game. But not knowing which server had the most people, the Discord bot came in for the rescue.

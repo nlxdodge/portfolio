@@ -4,7 +4,7 @@ title: Korfbal Trainer
 author: Gerben Veenhof
 date: 2021-08-06
 section: content
-header_image: /assets/images/works/korfbal_trainer.webp
+header_image: /assets/images/works/korfbal_trainer
 category: Typescript/Vue
 code: https://github.com/nlxdodge/korfbal-trainer
 link: https://korfbal-trainer.netlify.app/

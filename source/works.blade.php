@@ -4,7 +4,10 @@
 <div class="work-container">
 @foreach ($works as $work)
     <a class="work-block" href="{{ $work->getUrl() }}">
-        <img src="{{ $work->header_image }}" alt="{{ $work->title }}" loading="lazy" />
+        <picture>
+            <source srcset="{{ $work->header_image }}.webp" type="image/webp" loading="lazy">
+            <img src="{{ $work->header_image }}.png" alt="{{ $work->title }}" loading="lazy" />
+        </picture>
         <div class="work-title">
             {{ $work->title }}
             @if ($work->category)

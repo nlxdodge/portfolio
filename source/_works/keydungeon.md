@@ -4,7 +4,7 @@ title: KeyDungeon
 author: Gerben Veenhof
 date: 2021-08-09
 section: content
-header_image: /assets/images/works/keydungeon_c.webp
+header_image: /assets/images/works/keydungeon
 category: PHP/JS
 site: https://key.gerbenveenhof.nl/
 code: 
@@ -19,6 +19,7 @@ While you could argue if PHP is a good language or not fully depends on what val
 Before I ever wrote a lot of CSS I would never have though to use variables. So the company I worked for in the time switch to SCSS instead. There I learned how to write and use SCSS, but also apply it in my own projects.
 
 With this small example you can already see some usefull things in SCSS.
+
 ```scss
 @import "_font.scss";
 
@@ -31,9 +32,10 @@ I also added variables for the main colors of the website, so the light, dark an
 
 ## 💶 Increase in price
 
-My host [Cloudbear](https://cloudbear.nl) wanted to switch it customer base around, they way they where doing that was somewhat controversial as well. The previous price I had to pay was €0.50 a month. The new to pay price was going to be €7.50 a  a month... That is a price increase of 1400%! So by going from €6,- a year to €90,- a year made me take action immediately, I started looking for other alternatives in PHP hosting. I did found another host called [Vimmexx](https://www.vimexx.nl/) which in my opinion is still good for the price. Vimexx also puts heavy restrictions up on users, for example: 25GB of traffic a month. 
+My host [Cloudbear](https://cloudbear.nl) wanted to switch it customer base around, they way they where doing that was somewhat controversial as well. The previous price I had to pay was €0.50 a month. The new to pay price was going to be €7.50 a  a month... That is a price increase of 1400%! So by going from €6,- a year to €90,- a year made me take action immediately, I started looking for other alternatives in PHP hosting. I did found another host called [Vimmexx](https://www.vimexx.nl/) which in my opinion is still good for the price. Vimexx also puts heavy restrictions up on users, for example: 25GB of traffic a month.
 
 But for a portfolio of keydungeon it doesn't really matter to much, as I don't upload to many images and code or docker/program builds should be on Github anyways.
 
 ## 🔨 Upgrades
+
 I do plan to upgrade Keydungeon, but it's on the bottom of the list. So planning to make a new PHP API and a vue 3 front-end for starters.
