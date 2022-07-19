@@ -22,7 +22,7 @@
       <li class="glide__slide">
         <a href="/work/korfbal_trainer/" aria-label="Check the Korfbal Trainer project">
           <picture>
-            <source srcset="/assets/images/works/korfbal_trainer.webp" type="image/webp" loading="lazy">
+            <source srcset="/assets/images/works/korfbal_trainer.webp" type="image/webp" loading="lazy"/>
             <img src="/assets/images/works/korfbal_trainer.png" alt="Korfbal Trainer" loading="lazy" />
           </picture>
           <p>Korfbal Trainer <span>(Javascript)</span></p>
@@ -31,7 +31,7 @@
       <li class="glide__slide">
         <a href="/work/keydungeon/" aria-label="Check the Keydungeon project">
           <picture>
-            <source srcset="/assets/images/works/keydungeon.webp" type="image/webp" loading="lazy">
+            <source srcset="/assets/images/works/keydungeon.webp" type="image/webp" loading="lazy"/>
             <img src="/assets/images/works/keydungeon.png" alt="Keydungeon" loading="lazy" />
           </picture>
           <p>Keydungeon <span>(PHP)</span></p>
@@ -40,16 +40,16 @@
       <li class="glide__slide">
         <a href="/work/aq3d_bot/" aria-label="Check the AQ3D Bot project">
           <picture>
-            <source srcset="/assets/images/works/aq3d_bot.webp" type="image/webp" loading="lazy">
+            <source srcset="/assets/images/works/aq3d_bot.webp" type="image/webp" loading="lazy"/>
             <img src="/assets/images/works/aq3d_bot.png" alt="AQ3D Bot" loading="lazy" />
           </picture>
           <p>AQ3D Bot <span>(Java)</span></p>
         </a>
       </li>
       <li class="glide__slide">
-        <a class="swiper-slide" href="/work/scrapyard/" aria-label="Check the Scrapyard Mod project">
+        <a href="/work/scrapyard/" aria-label="Check the Scrapyard Mod project">
           <picture>
-            <source srcset="/assets/images/works/scrapyard.webp" type="image/webp" loading="lazy">
+            <source srcset="/assets/images/works/scrapyard.webp" type="image/webp" loading="lazy"/>
             <img src="/assets/images/works/scrapyard.png" alt="Scrapyard Mod" loading="lazy" />
           </picture>
           <p>Scrapyard Mod <span>(Java)</span></p>
