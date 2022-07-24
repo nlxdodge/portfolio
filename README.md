@@ -1,5 +1,8 @@
 # Small Static Jigsaw Website
 
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/nlxdodge/portfolio.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/nlxdodge/portfolio/alerts/)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/nlxdodge/portfolio.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/nlxdodge/portfolio/context:javascript)
+
 This website is made with [Jigsaw](https://jigsaw.tighten.co/). For installation instructions see [Installation](https://jigsaw.tighten.co/docs/installation/).
 
 ## Basic rundown for this project
