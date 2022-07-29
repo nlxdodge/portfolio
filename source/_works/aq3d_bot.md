@@ -6,7 +6,8 @@ date: 2020-11-26
 section: content
 header_image: /assets/images/works/aq3d_bot
 category: Java
-link: https://github.com/nlxdodge/C.A.T.E
+links:
+- https://github.com/nlxdodge/C.A.T.E
 ---
 
 ![Discord Bot](/assets/images/works/aq3d_bot.webp)

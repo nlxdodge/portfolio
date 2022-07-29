@@ -6,8 +6,9 @@ date: 2021-08-06
 section: content
 header_image: /assets/images/works/korfbal_trainer
 category: Typescript/Vue
-code: https://github.com/nlxdodge/korfbal-trainer
-link: https://korfbal-trainer.netlify.app/
+links:
+- https://github.com/nlxdodge/korfbal-trainer
+- https://korfbal-trainer.netlify.app/
 ---
 
 While it's no secret that people can't go without sports or some exercise to remain fit, our korfbal team most of the time didn't have the time to create a training for ourselves. For that I had the idea to gather a lot of exercises together, put them in some sort of database and create a simple generator for it. That way we always would have structured training for ourselves.

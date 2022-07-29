@@ -6,7 +6,11 @@
   align-content: center;
 
   ul {
-    list-style-type: square;
+    list-style: none;
+
+    li:before {
+      content: '📌';
+    }
   }
 
   @include media(">tablet") {
@@ -16,12 +20,21 @@
 
   .post-block {
     text-decoration: none;
-    flex: 1 1 calc(100% - 60px);
+    
     margin: 5px 5px;
     transition: all 0.2s ease-in-out;
 
+    span {
+      display: none;
+      font-size: 0.7em;
+    }
+
     @include media(">tablet") {
       flex: 0 0 calc(50% - 60px);
+
+      span {
+        display: inline-block;
+      }
     }
 
     &:hover {

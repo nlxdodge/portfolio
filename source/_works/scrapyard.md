@@ -6,7 +6,8 @@ date: 2020-10-28
 section: content
 header_image: /assets/images/works/scrapyard
 category: Java
-code: https://github.com/nlxdodge/scrapyard
+links:
+- https://github.com/nlxdodge/scrapyard
 ---
 
 Scrapyard is my first ever Minecraft mod that is basically a bunch of ideas gathered together into one mod.

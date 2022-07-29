@@ -28,5 +28,21 @@ return [
         $now = Carbon::now()->subYear(2);
         $lastModified = new Carbon($page->date);
         return $now->greaterThan($lastModified);
+    },
+    'getIcon' => function ($page, $url) {
+        $icon = "fas fa-link"; 
+        if(Str::contains($url, "github.com")) {
+            $icon = "fab fa-github";
+        }
+        if(Str::contains($url, "linkedin.com")) {
+            $icon = "fab fa-linkedin";
+        }
+        if(Str::contains($url, "twitter.com")) {
+            $icon = "fab fa-twitter";
+        }
+        if(Str::contains($url, "mailto")) {
+            $icon = "fas fa-envelope";
+        }
+        return $icon;
     }
 ];

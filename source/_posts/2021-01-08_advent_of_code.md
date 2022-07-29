@@ -4,7 +4,8 @@ title: Advent of Code 2020
 author: Gerben Veenhof
 date: 2021-01-08
 section: content
-link: https://github.com/nlxdodge/Advent-Of-Code
+links:
+- https://github.com/nlxdodge/Advent-Of-Code
 ---
 
 Each year there is the [Advent of Code](https://adventofcode.com/). In which you can compete to be the fastest programmer of the north pole 🎅🎄🛷.

@@ -11,7 +11,7 @@ pagination:
     <ul>
         @foreach ($pagination->items as $post)
         <li class="post-block">
-            {{ date('j F Y', $post->date) }} - <a href="{{ $post->getUrl() }}">{{ $post->title }}</a>
+            <a href="{{ $post->getUrl() }}">{{ $post->title }}</a> <span>({{ date('j-n-Y', $post->date) }})</span>
         </li>
         @endforeach
     </ul>

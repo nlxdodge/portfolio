@@ -6,8 +6,8 @@ date: 2021-08-09
 section: content
 header_image: /assets/images/works/keydungeon
 category: PHP/JS
-site: https://key.gerbenveenhof.nl/
-code: 
+links:
+- https://key.gerbenveenhof.nl/
 ---
 
 Keydungeon was one of my first finished projects, it's a password manager that I wrote myself. So it's not as secure as possible. But I wanted to give it a try anyways.
