@@ -9,5 +9,6 @@ mix.jigsaw()
     .sass('source/_assets/sass/main.scss', 'css')
     .options({
         processCssUrls: false,
+        ignored: /node_modules/,
     })
     .version();

@@ -3,7 +3,7 @@ FROM composer:2.2.0
 
 WORKDIR /app
 
-RUN apk add imagemagick nodejs npm --no-cache
+RUN apk add libwebp-tools nodejs npm --no-cache
 COPY package*.json ./
 RUN npm install
 

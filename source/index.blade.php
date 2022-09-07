@@ -11,7 +11,7 @@
   <p>With a short list of some of my experiences:</p>
   <ul>
     <li>Backend | Java, Ruby, Pyton, PHP, C# (Unity), C# .NET</li>
-    <li>Frontend | Vue & Angular with NPM & Yarn</li>
+    <li>Frontend | Vue with NPM & Yarn</li>
     <li>Cloud | AWS (Cloudformation, cloudfront, lambda's, gateway integration etc.)</li>
   </ul>
 </div>
@@ -23,7 +23,7 @@
         <a href="/work/korfbal_trainer/" aria-label="Check the Korfbal Trainer project">
           <picture>
             <source srcset="/assets/images/works/korfbal_trainer.webp" type="image/webp" loading="lazy"/>
-            <img src="/assets/images/works/korfbal_trainer.png" alt="Korfbal Trainer" loading="lazy" />
+            <img src="/assets/images/works/korfbal_trainer.png" alt="Korfbal Trainer" loading="lazy" width="1024" height="450"/>
           </picture>
           <p>Korfbal Trainer <span>(Javascript)</span></p>
         </a>
@@ -32,7 +32,7 @@
         <a href="/work/keydungeon/" aria-label="Check the Keydungeon project">
           <picture>
             <source srcset="/assets/images/works/keydungeon.webp" type="image/webp" loading="lazy"/>
-            <img src="/assets/images/works/keydungeon.png" alt="Keydungeon" loading="lazy" />
+            <img src="/assets/images/works/keydungeon.png" alt="Keydungeon" loading="lazy" width="1024" height="450"/>
           </picture>
           <p>Keydungeon <span>(PHP)</span></p>
         </a>
@@ -41,7 +41,7 @@
         <a href="/work/aq3d_bot/" aria-label="Check the AQ3D Bot project">
           <picture>
             <source srcset="/assets/images/works/aq3d_bot.webp" type="image/webp" loading="lazy"/>
-            <img src="/assets/images/works/aq3d_bot.png" alt="AQ3D Bot" loading="lazy" />
+            <img src="/assets/images/works/aq3d_bot.png" alt="AQ3D Bot" loading="lazy" width="1024" height="450"/>
           </picture>
           <p>AQ3D Bot <span>(Java)</span></p>
         </a>
@@ -50,7 +50,7 @@
         <a href="/work/scrapyard/" aria-label="Check the Scrapyard Mod project">
           <picture>
             <source srcset="/assets/images/works/scrapyard.webp" type="image/webp" loading="lazy"/>
-            <img src="/assets/images/works/scrapyard.png" alt="Scrapyard Mod" loading="lazy" />
+            <img src="/assets/images/works/scrapyard.png" alt="Scrapyard Mod" loading="lazy" width="1024" height="450"/>
           </picture>
           <p>Scrapyard Mod <span>(Java)</span></p>
         </a>
