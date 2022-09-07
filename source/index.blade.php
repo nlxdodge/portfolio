@@ -22,8 +22,8 @@
       <li class="glide__slide">
         <a href="/work/korfbal_trainer/" aria-label="Check the Korfbal Trainer project">
           <picture>
-            <source srcset="/assets/images/works/korfbal_trainer.webp" type="image/webp" loading="lazy"/>
-            <img src="/assets/images/works/korfbal_trainer.png" alt="Korfbal Trainer" loading="lazy" width="1024" height="450"/>
+            <source srcset="/assets/images/works/korfbal_trainer.webp" type="image/webp" />
+            <img src="/assets/images/works/korfbal_trainer.png" alt="Korfbal Trainer" width="1024" height="450"/>
           </picture>
           <p>Korfbal Trainer <span>(Javascript)</span></p>
         </a>
