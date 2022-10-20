@@ -7,7 +7,7 @@ This website is made with [Jigsaw](https://jigsaw.tighten.co/). For installation
 
 ## Basic rundown for this project
 
-Clone the project, run `docker-compose up -d` and go to `http://localhost:3000` to view the local variant.
+Clone the project, run `docker-compose up -d --build` and go to `http://localhost:3000` to view the local variant.
 
 ## Todo's
 
